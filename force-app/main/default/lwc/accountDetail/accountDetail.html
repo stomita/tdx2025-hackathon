@@ -1,6 +1,8 @@
 <template>
-    <!-- Page Header -->
-    <lightning-card>
+    <!-- Only render content if recordId exists -->
+    <template if:true={recordId}>
+        <!-- Page Header -->
+        <lightning-card>
         <div slot="title">
             <lightning-icon icon-name="standard:account" size="small" class="slds-m-right_small"></lightning-icon>
             <span>{accountName}</span>
@@ -101,4 +103,5 @@
             </div>
         </div>
     </lightning-card>
+    </template>
 </template>
