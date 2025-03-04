@@ -30,6 +30,7 @@ export default class OpportunityRevenueByType extends LightningElement {
     handleCellClick(event) {
         const detail = event.detail;
         console.log('Cell clicked:', JSON.stringify(detail));
+        console.log('User seems curious about opportunities where the Type is "' + detail.rowValue + " and CloseDate in " + detail.columnValue);
         // Additional actions can be executed here if needed
     }
 }
