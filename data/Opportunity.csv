@@ -1,0 +1,769 @@
+Id,Name,AccountId,StageName,CloseDate,Amount,Type,Probability,Description
+0060000000000001,"Vanguard Industries - 50 Licenses NEW",0010000000000001,"Closed Won","2022-03-15",75000,"New Business",100,"2022-01-10: Initial contact with CIO regarding new license requirements.
+2022-01-25: Presented product demo to IT team.
+2022-02-08: Technical evaluation completed successfully.
+2022-02-20: Pricing negotiation started.
+2022-03-01: Final proposal accepted.
+2022-03-15: Contract signed and implemented."
+0060000000000002,"Vanguard Industries - Annual Maintenance Renewal",0010000000000001,"Closed Won","2023-04-10",25000,"Renewal",100,"2023-02-15: Sent renewal notification.
+2023-03-01: Customer confirmed interest in renewal.
+2023-03-20: Negotiated maintenance terms.
+2023-04-05: Received signed renewal agreement.
+2023-04-10: Processed renewal payment."
+0060000000000003,"Vanguard Industries - Cloud Migration Project",0010000000000001,"Closed Lost","2023-08-22",120000,"New Business",0,"2023-05-10: Initial discussion about cloud migration needs.
+2023-06-05: Presented migration strategy and timeline.
+2023-06-30: Technical assessment completed.
+2023-07-15: Pricing proposal submitted.
+2023-08-01: Customer expressed concerns about migration timeline.
+2023-08-15: Attempted to revise proposal with adjusted timeline.
+2023-08-22: Lost to competitor offering faster migration timeline and lower cost."
+0060000000000004,"Vanguard Industries - 25 Licenses ADD",0010000000000001,"Closed Won","2024-02-28",37500,"Expansion",100,"2024-01-10: Customer requested quote for additional licenses.
+2024-01-20: Discussed expansion needs with department heads.
+2024-02-05: Submitted proposal for additional licenses.
+2024-02-15: Proposal accepted.
+2024-02-28: Order processed and licenses activated."
+0060000000000005,"Vanguard Industries - Enterprise Security Package",0010000000000001,"Negotiation/Review","2025-04-15",180000,"New Business",75,"2025-01-10: Initial security assessment meeting.
+2025-01-25: Presented comprehensive security solution.
+2025-02-15: Technical proof of concept completed.
+2025-03-01: Submitted detailed proposal.
+2025-03-20: Currently in final negotiation phase."
+0060000000000006,"Pinnacle Technologies - 100 Licenses NEW",0010000000000002,"Closed Won","2022-05-20",150000,"New Business",100,"2022-03-01: Initial meeting with CTO.
+2022-03-15: Product demonstration to executive team.
+2022-04-01: Technical evaluation period.
+2022-04-20: Pricing negotiation.
+2022-05-10: Contract finalized.
+2022-05-20: Implementation completed."
+0060000000000007,"Pinnacle Technologies - Custom Integration Project",0010000000000002,"Closed Won","2023-02-10",85000,"New Business",100,"2022-11-15: Initial requirements gathering.
+2022-12-01: Integration architecture proposed.
+2022-12-20: Technical specifications approved.
+2023-01-15: Development and testing phase.
+2023-02-05: Final acceptance testing.
+2023-02-10: Project delivered and signed off."
+0060000000000008,"Pinnacle Technologies - 50 Licenses ADD",0010000000000002,"Closed Won","2023-09-15",75000,"Expansion",100,"2023-07-20: Customer requested expansion quote.
+2023-08-05: Needs assessment meeting.
+2023-08-20: Proposal submitted.
+2023-09-01: Proposal accepted.
+2023-09-15: Additional licenses implemented."
+0060000000000009,"Pinnacle Technologies - Annual Support Renewal",0010000000000002,"Closed Won","2024-06-01",60000,"Renewal",100,"2024-04-01: Sent renewal notification.
+2024-04-15: Discussed support level options.
+2024-05-01: Renewal agreement finalized.
+2024-05-20: Payment processed.
+2024-06-01: Support services renewed."
+0060000000000010,"Pinnacle Technologies - AI Analytics Module",0010000000000002,"Proposal/Price Quote","2025-05-10",220000,"New Business",65,"2025-02-15: Initial discussion about AI analytics needs.
+2025-03-01: Demonstration of AI capabilities.
+2025-03-20: Technical assessment completed.
+2025-04-10: Proposal submitted, awaiting customer review."
+0060000000000011,"Beacon Industries - POS System Upgrade",0010000000000003,"Closed Won","2022-07-15",95000,"New Business",100,"2022-05-01: Initial meeting to discuss POS upgrade needs.
+2022-05-15: System requirements finalized.
+2022-06-01: Proposal submitted and accepted.
+2022-06-20: Implementation planning.
+2022-07-10: System testing completed.
+2022-07-15: New POS system deployed."
+0060000000000012,"Beacon Industries - Mobile App Development",0010000000000003,"Closed Lost","2023-03-10",120000,"New Business",0,"2022-12-01: Initial requirements gathering for retail mobile app.
+2023-01-10: Prototype demonstration.
+2023-01-25: Technical specifications review.
+2023-02-15: Cost concerns raised by customer.
+2023-03-01: Attempted to revise scope and budget.
+2023-03-10: Lost to competitor with pre-built solution at lower cost."
+0060000000000013,"Beacon Industries - Inventory Management System",0010000000000003,"Closed Won","2023-11-20",85000,"New Business",100,"2023-08-15: Initial discussion about inventory challenges.
+2023-09-01: Requirements gathering and system design.
+2023-09-20: Proposal submitted and accepted.
+2023-10-15: System configuration and testing.
+2023-11-10: Staff training completed.
+2023-11-20: System fully implemented."
+0060000000000014,"Beacon Industries - E-commerce Integration",0010000000000003,"Closed Won","2024-04-05",65000,"New Business",100,"2024-01-15: Initial discussion about online sales channel.
+2024-02-01: Integration requirements finalized.
+2024-02-20: Proposal accepted.
+2024-03-15: Development and testing.
+2024-04-05: E-commerce platform successfully integrated."
+0060000000000015,"Beacon Industries - Loyalty Program Implementation",0010000000000003,"Value Proposition","2025-06-15",110000,"New Business",50,"2025-03-01: Initial discussion about customer loyalty program.
+2025-03-20: Presented loyalty program concepts.
+2025-04-15: Conducted market research with customer base.
+2025-05-01: Developing detailed value proposition."
+0060000000000016,"Northstar Resources - Property Management System",0010000000000004,"Closed Won","2022-06-10",130000,"New Business",100,"2022-03-15: Initial meeting with operations director.
+2022-04-01: Requirements gathering sessions.
+2022-04-20: System demonstration and evaluation.
+2022-05-10: Proposal accepted.
+2022-05-25: Implementation planning.
+2022-06-10: System successfully deployed."
+0060000000000017,"Northstar Resources - 75 User Licenses",0010000000000004,"Closed Won","2023-01-20",112500,"New Business",100,"2022-11-01: Initial license requirements discussion.
+2022-11-20: User needs assessment completed.
+2022-12-10: Pricing proposal submitted.
+2023-01-05: Contract negotiations completed.
+2023-01-20: Licenses activated and deployed."
+0060000000000018,"Northstar Resources - Mobile Inspection App",0010000000000004,"Closed Lost","2023-07-15",95000,"New Business",0,"2023-04-01: Initial requirements gathering for mobile inspection app.
+2023-04-20: Prototype demonstration.
+2023-05-10: Technical evaluation period.
+2023-06-01: Budget concerns raised.
+2023-06-20: Attempted to revise scope.
+2023-07-15: Lost due to internal budget cuts and project deprioritization."
+0060000000000019,"Northstar Resources - Annual Maintenance",0010000000000004,"Closed Won","2024-02-10",45000,"Renewal",100,"2024-01-01: Sent maintenance renewal notification.
+2024-01-15: Discussed service level options.
+2024-01-25: Renewal agreement signed.
+2024-02-10: Maintenance services renewed."
+0060000000000020,"Northstar Resources - Smart Building Integration",0010000000000004,"Perception Analysis","2025-07-20",185000,"New Business",60,"2025-04-10: Initial discussion about smart building technology.
+2025-04-25: Technical assessment of existing infrastructure.
+2025-05-15: Proof of concept demonstration.
+2025-06-01: Working through customer perception analysis."
+0060000000000021,"Vertex Consulting - CRM Implementation",0010000000000005,"Closed Won","2022-04-15",110000,"New Business",100,"2022-01-10: Initial requirements gathering.
+2022-01-25: System demonstration to management team.
+2022-02-15: Technical evaluation completed.
+2022-03-01: Proposal accepted.
+2022-03-20: Implementation planning.
+2022-04-15: CRM system successfully deployed."
+0060000000000022,"Vertex Consulting - 40 Professional Licenses",0010000000000005,"Closed Won","2022-11-10",80000,"New Business",100,"2022-09-01: License requirements discussion.
+2022-09-15: User needs assessment.
+2022-10-01: Pricing proposal submitted.
+2022-10-20: Contract finalized.
+2022-11-10: Licenses activated."
+0060000000000023,"Vertex Consulting - Business Intelligence Tools",0010000000000005,"Closed Lost","2023-05-20",125000,"New Business",0,"2023-02-15: Initial discussion about BI requirements.
+2023-03-01: Tool demonstration and evaluation.
+2023-03-20: Technical assessment period.
+2023-04-10: Pricing concerns raised.
+2023-05-01: Attempted to revise proposal.
+2023-05-20: Lost to competitor with more specialized industry-specific analytics."
+0060000000000024,"Vertex Consulting - 20 Licenses ADD",0010000000000005,"Closed Won","2024-01-15",40000,"Expansion",100,"2023-11-20: Request for additional licenses.
+2023-12-05: User requirements confirmed.
+2023-12-20: Proposal submitted and accepted.
+2024-01-15: Additional licenses implemented."
+0060000000000025,"Vertex Consulting - Advanced Analytics Platform",0010000000000005,"Id. Decision Makers","2025-05-05",160000,"New Business",70,"2025-02-01: Initial discussion about analytics needs.
+2025-02-20: Platform demonstration to technical team.
+2025-03-15: Proof of concept development.
+2025-04-01: Currently identifying key decision makers for final approval."
+0060000000000026,"Redwood Solutions - Property Portfolio System",0010000000000006,"Closed Won","2022-08-10",145000,"New Business",100,"2022-05-15: Initial meeting with real estate operations team.
+2022-06-01: Requirements gathering sessions.
+2022-06-20: System demonstration and evaluation.
+2022-07-10: Proposal accepted.
+2022-07-25: Implementation planning.
+2022-08-10: System successfully deployed."
+0060000000000027,"Redwood Solutions - 60 User Licenses",0010000000000006,"Closed Won","2023-02-15",90000,"New Business",100,"2022-12-01: License requirements discussion.
+2022-12-20: User needs assessment.
+2023-01-10: Pricing proposal submitted.
+2023-01-30: Contract finalized.
+2023-02-15: Licenses activated."
+0060000000000028,"Redwood Solutions - Mobile Property Management",0010000000000006,"Closed Lost","2023-09-10",110000,"New Business",0,"2023-06-01: Initial requirements gathering for mobile app.
+2023-06-20: Prototype demonstration.
+2023-07-10: Technical evaluation period.
+2023-08-01: Integration concerns identified.
+2023-08-20: Attempted to address technical concerns.
+2023-09-10: Lost due to technical compatibility issues with existing systems."
+0060000000000029,"Redwood Solutions - Annual Support Renewal",0010000000000006,"Closed Won","2024-03-01",55000,"Renewal",100,"2024-01-15: Sent support renewal notification.
+2024-02-01: Discussed support level options.
+2024-02-15: Renewal agreement signed.
+2024-03-01: Support services renewed."
+0060000000000030,"Redwood Solutions - AI Property Valuation Tool",0010000000000006,"Needs Analysis","2025-06-10",195000,"New Business",40,"2025-03-15: Initial discussion about AI valuation needs.
+2025-04-01: Preliminary requirements gathering.
+2025-04-20: Currently conducting detailed needs analysis."
+0060000000000031,"BlueWave Innovations - Patient Management System",0010000000000007,"Closed Won","2022-05-05",165000,"New Business",100,"2022-02-10: Initial meeting with healthcare operations team.
+2022-02-25: Requirements gathering sessions.
+2022-03-15: System demonstration and evaluation.
+2022-04-01: Proposal accepted.
+2022-04-20: Implementation planning.
+2022-05-05: System successfully deployed."
+0060000000000032,"BlueWave Innovations - 90 Clinical Licenses",0010000000000007,"Closed Won","2022-12-10",135000,"New Business",100,"2022-09-15: License requirements discussion.
+2022-10-01: User needs assessment.
+2022-10-20: Pricing proposal submitted.
+2022-11-15: Contract finalized.
+2022-12-10: Licenses activated."
+0060000000000033,"BlueWave Innovations - Telehealth Integration",0010000000000007,"Closed Won","2023-06-20",120000,"New Business",100,"2023-03-10: Initial requirements gathering for telehealth.
+2023-03-25: Integration architecture proposed.
+2023-04-15: Technical specifications approved.
+2023-05-10: Development and testing.
+2023-06-20: Telehealth system successfully integrated."
+0060000000000034,"BlueWave Innovations - 45 Licenses ADD",0010000000000007,"Closed Won","2024-01-30",67500,"Expansion",100,"2023-11-15: Request for additional licenses.
+2023-12-01: User requirements confirmed.
+2023-12-20: Proposal submitted and accepted.
+2024-01-30: Additional licenses implemented."
+0060000000000035,"BlueWave Innovations - AI Diagnostic Assistant",0010000000000007,"Qualification","2025-08-15",225000,"New Business",30,"2025-05-01: Initial discussion about AI diagnostic tools.
+2025-05-20: Preliminary requirements gathering.
+2025-06-15: Currently in qualification phase to determine fit."
+0060000000000036,"Redwood Dynamics - Business Process Optimization",0010000000000008,"Closed Won","2022-07-01",95000,"New Business",100,"2022-04-10: Initial consultation meeting.
+2022-04-25: Process assessment workshops.
+2022-05-15: Optimization strategy presented.
+2022-06-01: Proposal accepted.
+2022-06-20: Implementation planning.
+2022-07-01: Optimization project launched."
+0060000000000037,"Redwood Dynamics - 30 Consultant Licenses",0010000000000008,"Closed Won","2023-01-15",60000,"New Business",100,"2022-10-20: License requirements discussion.
+2022-11-05: User needs assessment.
+2022-11-25: Pricing proposal submitted.
+2022-12-15: Contract finalized.
+2023-01-15: Licenses activated."
+0060000000000038,"Redwood Dynamics - Change Management Program",0010000000000008,"Closed Lost","2023-08-05",85000,"New Business",0,"2023-05-01: Initial program scoping.
+2023-05-20: Change management strategy presented.
+2023-06-10: Stakeholder workshops conducted.
+2023-07-01: Budget concerns raised.
+2023-07-20: Attempted to revise program scope.
+2023-08-05: Lost due to internal reorganization and shifting priorities."
+0060000000000039,"Redwood Dynamics - Annual Training Package",0010000000000008,"Closed Won","2024-02-20",35000,"Renewal",100,"2024-01-05: Sent training package renewal.
+2024-01-20: Discussed training needs for upcoming year.
+2024-02-05: Renewal agreement signed.
+2024-02-20: Training package renewed."
+0060000000000040,"Redwood Dynamics - Digital Transformation Strategy",0010000000000008,"Prospecting","2025-07-01",175000,"New Business",20,"2025-05-15: Initial outreach about digital transformation.
+2025-06-01: Preliminary discussion with CIO.
+2025-06-20: Currently in early prospecting phase."
+0060000000000041,"Northstar Corporation - Energy Management System",0010000000000009,"Closed Won","2022-09-15",155000,"New Business",100,"2022-06-10: Initial meeting with operations team.
+2022-06-25: Requirements gathering sessions.
+2022-07-15: System demonstration and evaluation.
+2022-08-01: Proposal accepted.
+2022-08-20: Implementation planning.
+2022-09-15: System successfully deployed."
+0060000000000042,"Northstar Corporation - 50 Operator Licenses",0010000000000009,"Closed Won","2023-03-10",75000,"New Business",100,"2022-12-15: License requirements discussion.
+2023-01-05: User needs assessment.
+2023-01-25: Pricing proposal submitted.
+2023-02-15: Contract finalized.
+2023-03-10: Licenses activated."
+0060000000000043,"Northstar Corporation - Predictive Maintenance Module",0010000000000009,"Closed Lost","2023-10-05",130000,"New Business",0,"2023-07-01: Initial requirements gathering.
+2023-07-20: Module demonstration and evaluation.
+2023-08-10: Technical assessment period.
+2023-09-01: ROI concerns raised.
+2023-09-20: Attempted to revise value proposition.
+2023-10-05: Lost due to competing internal projects and budget constraints."
+0060000000000044,"Northstar Corporation - 25 Licenses ADD",0010000000000009,"Closed Won","2024-04-20",37500,"Expansion",100,"2024-02-15: Request for additional licenses.
+2024-03-01: User requirements confirmed.
+2024-03-20: Proposal submitted and accepted.
+2024-04-20: Additional licenses implemented."
+0060000000000045,"Northstar Corporation - Renewable Energy Integration",0010000000000009,"Proposal/Price Quote","2025-05-25",210000,"New Business",60,"2025-02-10: Initial discussion about renewable integration.
+2025-03-01: Technical assessment of current systems.
+2025-03-20: Integration strategy developed.
+2025-04-15: Proposal submitted, awaiting customer review."
+0060000000000046,"Redwood Innovations - Financial Analytics Platform",0010000000000010,"Closed Won","2022-06-20",140000,"New Business",100,"2022-03-15: Initial meeting with finance team.
+2022-04-01: Requirements gathering sessions.
+2022-04-20: Platform demonstration and evaluation.
+2022-05-10: Proposal accepted.
+2022-05-30: Implementation planning.
+2022-06-20: Platform successfully deployed."
+0060000000000047,"Redwood Innovations - 65 Analyst Licenses",0010000000000010,"Closed Won","2023-01-05",97500,"New Business",100,"2022-10-10: License requirements discussion.
+2022-10-25: User needs assessment.
+2022-11-15: Pricing proposal submitted.
+2022-12-10: Contract finalized.
+2023-01-05: Licenses activated."
+0060000000000048,"Redwood Innovations - Risk Management Module",0010000000000010,"Closed Won","2023-07-15",110000,"New Business",100,"2023-04-05: Initial requirements gathering.
+2023-04-25: Module demonstration and evaluation.
+2023-05-15: Technical assessment completed.
+2023-06-01: Proposal accepted.
+2023-06-20: Implementation planning.
+2023-07-15: Module successfully deployed."
+0060000000000049,"Redwood Innovations - Annual Support Package",0010000000000010,"Closed Won","2024-01-25",55000,"Renewal",100,"2023-12-01: Sent support package renewal.
+2023-12-15: Discussed support needs for upcoming year.
+2024-01-10: Renewal agreement signed.
+2024-01-25: Support package renewed."
+0060000000000050,"Redwood Innovations - AI Investment Analysis Tool",0010000000000010,"Negotiation/Review","2025-04-10",190000,"New Business",75,"2025-01-15: Initial discussion about AI investment analysis.
+2025-02-01: Tool demonstration to investment team.
+2025-02-20: Technical proof of concept completed.
+2025-03-10: Proposal submitted.
+2025-03-25: Currently in final negotiation phase."
+0060000000000051,"Crestpoint Strategies - Wealth Management Platform",0010000000000011,"Closed Won","2022-08-05",160000,"New Business",100,"2022-05-01: Initial meeting with wealth management team.
+2022-05-20: Requirements gathering sessions.
+2022-06-10: Platform demonstration and evaluation.
+2022-07-01: Proposal accepted.
+2022-07-20: Implementation planning.
+2022-08-05: Platform successfully deployed."
+0060000000000052,"Crestpoint Strategies - 80 Advisor Licenses",0010000000000011,"Closed Won","2023-02-10",120000,"New Business",100,"2022-11-15: License requirements discussion.
+2022-12-01: User needs assessment.
+2022-12-20: Pricing proposal submitted.
+2023-01-15: Contract finalized.
+2023-02-10: Licenses activated."
+0060000000000053,"Crestpoint Strategies - Client Portal Development",0010000000000011,"Closed Lost","2023-09-15",135000,"New Business",0,"2023-06-10: Initial requirements gathering.
+2023-06-30: Portal prototype demonstration.
+2023-07-20: Technical assessment period.
+2023-08-10: Security concerns identified.
+2023-08-30: Attempted to address security issues.
+2023-09-15: Lost due to unresolved compliance and security requirements."
+0060000000000054,"Crestpoint Strategies - 40 Licenses ADD",0010000000000011,"Closed Won","2024-03-20",60000,"Expansion",100,"2024-01-15: Request for additional licenses.
+2024-02-01: User requirements confirmed.
+2024-02-20: Proposal submitted and accepted.
+2024-03-20: Additional licenses implemented."
+0060000000000055,"Crestpoint Strategies - Automated Financial Planning",0010000000000011,"Value Proposition","2025-06-05",215000,"New Business",50,"2025-03-10: Initial discussion about automated planning tools.
+2025-03-30: Preliminary requirements gathering.
+2025-04-20: Currently developing detailed value proposition."
+0060000000000056,"OmniTech Ventures - Business Intelligence Implementation",0010000000000012,"Closed Won","2022-07-10",125000,"New Business",100,"2022-04-05: Initial meeting with analytics team.
+2022-04-25: Requirements gathering sessions.
+2022-05-15: System demonstration and evaluation.
+2022-06-01: Proposal accepted.
+2022-06-20: Implementation planning.
+2022-07-10: BI system successfully deployed."
+0060000000000057,"OmniTech Ventures - 55 Professional Licenses",0010000000000012,"Closed Won","2023-01-20",82500,"New Business",100,"2022-10-15: License requirements discussion.
+2022-11-01: User needs assessment.
+2022-11-20: Pricing proposal submitted.
+2022-12-15: Contract finalized.
+2023-01-20: Licenses activated."
+0060000000000058,"OmniTech Ventures - Data Integration Project",0010000000000012,"Closed Won","2023-08-10",95000,"New Business",100,"2023-05-01: Initial requirements gathering.
+2023-05-20: Integration architecture proposed.
+2023-06-10: Technical specifications approved.
+2023-07-01: Development and testing.
+2023-08-10: Integration project successfully completed."
+0060000000000059,"OmniTech Ventures - Annual Maintenance",0010000000000012,"Closed Won","2024-02-15",45000,"Renewal",100,"2023-12-20: Sent maintenance renewal notification.
+2024-01-10: Discussed service level options.
+2024-01-30: Renewal agreement signed.
+2024-02-15: Maintenance services renewed."
+0060000000000060,"OmniTech Ventures - Predictive Analytics Platform",0010000000000012,"Perception Analysis","2025-05-20",175000,"New Business",60,"2025-02-15: Initial discussion about predictive analytics.
+2025-03-05: Platform demonstration to analytics team.
+2025-03-25: Technical assessment initiated.
+2025-04-15: Currently conducting perception analysis with stakeholders."
+0060000000000061,"Vanguard Networks - Network Security Implementation",0010000000000013,"Closed Won","2022-09-01",105000,"New Business",100,"2022-06-10: Initial security assessment meeting.
+2022-06-30: Requirements gathering sessions.
+2022-07-20: Security solution demonstration.
+2022-08-10: Proposal accepted.
+2022-08-25: Implementation planning.
+2022-09-01: Security system successfully deployed."
+0060000000000062,"Vanguard Networks - 25 Administrator Licenses",0010000000000013,"Closed Won","2023-03-15",50000,"New Business",100,"2022-12-20: License requirements discussion.
+2023-01-10: User needs assessment.
+2023-01-30: Pricing proposal submitted.
+2023-02-20: Contract finalized.
+2023-03-15: Licenses activated."
+0060000000000063,"Vanguard Networks - Cloud Migration Project",0010000000000013,"Closed Lost","2023-10-10",120000,"New Business",0,"2023-07-05: Initial requirements gathering.
+2023-07-25: Migration strategy presented.
+2023-08-15: Technical assessment period.
+2023-09-01: Cost concerns raised.
+2023-09-20: Attempted to revise scope and budget.
+2023-10-10: Lost due to budget constraints and decision to postpone migration."
+0060000000000064,"Vanguard Networks - 15 Licenses ADD",0010000000000013,"Closed Won","2024-04-05",30000,"Expansion",100,"2024-02-10: Request for additional licenses.
+2024-02-25: User requirements confirmed.
+2024-03-15: Proposal submitted and accepted.
+2024-04-05: Additional licenses implemented."
+0060000000000065,"Vanguard Networks - Zero Trust Security Framework",0010000000000013,"Qualification","2025-07-15",165000,"New Business",30,"2025-04-20: Initial discussion about zero trust security.
+2025-05-10: Preliminary security assessment.
+2025-06-01: Currently in qualification phase to determine requirements."
+0060000000000066,"Everest Logistics - Supply Chain Optimization",0010000000000014,"Closed Won","2022-06-15",135000,"New Business",100,"2022-03-10: Initial consultation meeting.
+2022-03-30: Process assessment workshops.
+2022-04-20: Optimization strategy presented.
+2022-05-10: Proposal accepted.
+2022-05-30: Implementation planning.
+2022-06-15: Optimization project launched."
+0060000000000067,"Everest Logistics - 70 User Licenses",0010000000000014,"Closed Won","2022-12-20",105000,"New Business",100,"2022-10-01: License requirements discussion.
+2022-10-20: User needs assessment.
+2022-11-10: Pricing proposal submitted.
+2022-12-05: Contract finalized.
+2022-12-20: Licenses activated."
+0060000000000068,"Everest Logistics - Warehouse Management System",0010000000000014,"Closed Won","2023-07-01",150000,"New Business",100,"2023-04-05: Initial requirements gathering.
+2023-04-25: System demonstration and evaluation.
+2023-05-15: Technical assessment completed.
+2023-06-01: Proposal accepted.
+2023-06-20: Implementation planning.
+2023-07-01: System successfully deployed."
+0060000000000069,"Everest Logistics - Annual Support Renewal",0010000000000014,"Closed Won","2024-01-10",65000,"Renewal",100,"2023-11-15: Sent support renewal notification.
+2023-12-01: Discussed support level options.
+2023-12-20: Renewal agreement signed.
+2024-01-10: Support services renewed."
+0060000000000070,"Everest Logistics - IoT Fleet Tracking Solution",0010000000000014,"Id. Decision Makers","2025-05-01",195000,"New Business",70,"2025-02-05: Initial discussion about fleet tracking needs.
+2025-02-25: Solution demonstration to logistics team.
+2025-03-15: Technical assessment initiated.
+2025-04-10: Currently identifying key decision makers for final approval."
+0060000000000071,"Horizon Consulting - Financial Advisory Platform",0010000000000015,"Closed Won","2022-08-20",145000,"New Business",100,"2022-05-15: Initial meeting with advisory team.
+2022-06-05: Requirements gathering sessions.
+2022-06-25: Platform demonstration and evaluation.
+2022-07-15: Proposal accepted.
+2022-08-05: Implementation planning.
+2022-08-20: Platform successfully deployed."
+0060000000000072,"Horizon Consulting - 60 Advisor Licenses",0010000000000015,"Closed Won","2023-02-25",90000,"New Business",100,"2022-12-01: License requirements discussion.
+2022-12-20: User needs assessment.
+2023-01-15: Pricing proposal submitted.
+2023-02-10: Contract finalized.
+2023-02-25: Licenses activated."
+0060000000000073,"Horizon Consulting - Client Portfolio Analysis",0010000000000015,"Closed Lost","2023-09-30",110000,"New Business",0,"2023-06-15: Initial requirements gathering.
+2023-07-05: Analysis tool demonstration.
+2023-07-25: Technical assessment period.
+2023-08-15: Integration challenges identified.
+2023-09-10: Attempted to address technical issues.
+2023-09-30: Lost due to compatibility issues with existing portfolio system."
+0060000000000074,"Horizon Consulting - 30 Licenses ADD",0010000000000015,"Closed Won","2024-03-15",45000,"Expansion",100,"2024-01-10: Request for additional licenses.
+2024-01-30: User requirements confirmed.
+2024-02-20: Proposal submitted and accepted.
+2024-03-15: Additional licenses implemented."
+0060000000000075,"Horizon Consulting - AI Investment Strategy Tool",0010000000000015,"Needs Analysis","2025-06-20",185000,"New Business",40,"2025-03-25: Initial discussion about AI investment tools.
+2025-04-15: Preliminary requirements gathering.
+2025-05-10: Currently conducting detailed needs analysis."
+0060000000000076,"Sterling Ventures - Energy Trading Platform",0010000000000016,"Closed Won","2022-07-25",115000,"New Business",100,"2022-04-20: Initial meeting with trading team.
+2022-05-10: Requirements gathering sessions.
+2022-05-30: Platform demonstration and evaluation.
+2022-06-20: Proposal accepted.
+2022-07-10: Implementation planning.
+2022-07-25: Platform successfully deployed."
+0060000000000077,"Sterling Ventures - 20 Trader Licenses",0010000000000016,"Closed Won","2023-01-30",40000,"New Business",100,"2022-11-05: License requirements discussion.
+2022-11-25: User needs assessment.
+2022-12-15: Pricing proposal submitted.
+2023-01-15: Contract finalized.
+2023-01-30: Licenses activated."
+0060000000000078,"Sterling Ventures - Market Analysis Module",0010000000000016,"Closed Won","2023-08-15",85000,"New Business",100,"2023-05-10: Initial requirements gathering.
+2023-05-30: Module demonstration and evaluation.
+2023-06-20: Technical assessment completed.
+2023-07-10: Proposal accepted.
+2023-08-15: Module successfully implemented."
+0060000000000079,"Sterling Ventures - Annual Maintenance",0010000000000016,"Closed Won","2024-02-28",35000,"Renewal",100,"2024-01-05: Sent maintenance renewal notification.
+2024-01-25: Discussed service level options.
+2024-02-15: Renewal agreement signed.
+2024-02-28: Maintenance services renewed."
+0060000000000080,"Sterling Ventures - Renewable Energy Analytics",0010000000000016,"Prospecting","2025-07-10",155000,"New Business",20,"2025-05-25: Initial outreach about renewable analytics.
+2025-06-15: Preliminary discussion with analytics team.
+2025-06-30: Currently in early prospecting phase."
+0060000000000081,"Apex Holdings - Learning Management System",0010000000000017,"Closed Won","2022-09-10",175000,"New Business",100,"2022-06-15: Initial meeting with education team.
+2022-07-05: Requirements gathering sessions.
+2022-07-25: System demonstration and evaluation.
+2022-08-15: Proposal accepted.
+2022-08-30: Implementation planning.
+2022-09-10: LMS successfully deployed."
+0060000000000082,"Apex Holdings - 200 Educator Licenses",0010000000000017,"Closed Won","2023-03-01",200000,"New Business",100,"2022-12-10: License requirements discussion.
+2022-12-30: User needs assessment.
+2023-01-20: Pricing proposal submitted.
+2023-02-15: Contract finalized.
+2023-03-01: Licenses activated."
+0060000000000083,"Apex Holdings - Student Portal Development",0010000000000017,"Closed Won","2023-10-15",145000,"New Business",100,"2023-07-01: Initial requirements gathering.
+2023-07-20: Portal prototype demonstration.
+2023-08-10: Technical assessment completed.
+2023-09-01: Proposal accepted.
+2023-09-30: Development and testing.
+2023-10-15: Portal successfully launched."
+0060000000000084,"Apex Holdings - 100 Licenses ADD",0010000000000017,"Closed Won","2024-04-10",100000,"Expansion",100,"2024-02-05: Request for additional licenses.
+2024-02-25: User requirements confirmed.
+2024-03-15: Proposal submitted and accepted.
+2024-04-10: Additional licenses implemented."
+0060000000000085,"Apex Holdings - AI Adaptive Learning Platform",0010000000000017,"Proposal/Price Quote","2025-05-15",250000,"New Business",65,"2025-02-10: Initial discussion about adaptive learning.
+2025-03-01: Platform demonstration to education team.
+2025-03-20: Technical assessment completed.
+2025-04-15: Proposal submitted, awaiting customer review."
+0060000000000086,"Everest Dynamics - Online Learning Platform",0010000000000018,"Closed Won","2022-06-30",165000,"New Business",100,"2022-03-25: Initial meeting with education team.
+2022-04-15: Requirements gathering sessions.
+2022-05-05: Platform demonstration and evaluation.
+2022-05-25: Proposal accepted.
+2022-06-15: Implementation planning.
+2022-06-30: Platform successfully deployed."
+0060000000000087,"Everest Dynamics - 150 Instructor Licenses",0010000000000018,"Closed Won","2022-12-15",150000,"New Business",100,"2022-09-20: License requirements discussion.
+2022-10-10: User needs assessment.
+2022-10-30: Pricing proposal submitted.
+2022-11-20: Contract finalized.
+2022-12-15: Licenses activated."
+0060000000000088,"Everest Dynamics - Virtual Classroom Module",0010000000000018,"Closed Lost","2023-07-20",130000,"New Business",0,"2023-04-15: Initial requirements gathering.
+2023-05-05: Module demonstration and evaluation.
+2023-05-25: Technical assessment period.
+2023-06-15: Performance concerns identified.
+2023-07-05: Attempted to address technical issues.
+2023-07-20: Lost due to performance limitations for large-scale virtual classrooms."
+0060000000000089,"Everest Dynamics - 75 Licenses ADD",0010000000000018,"Closed Won","2024-01-20",75000,"Expansion",100,"2023-11-10: Request for additional licenses.
+2023-11-30: User requirements confirmed.
+2023-12-20: Proposal submitted and accepted.
+2024-01-20: Additional licenses implemented."
+0060000000000090,"Everest Dynamics - Gamified Learning Experience",0010000000000018,"Value Proposition","2025-06-30",195000,"New Business",50,"2025-03-15: Initial discussion about gamification.
+2025-04-05: Preliminary concept presentation.
+2025-04-25: User experience workshops.
+2025-05-15: Currently developing detailed value proposition."
+0060000000000091,"BlueWave Group - Smart Grid Management",0010000000000019,"Closed Won","2022-08-15",185000,"New Business",100,"2022-05-10: Initial meeting with grid operations team.
+2022-05-30: Requirements gathering sessions.
+2022-06-20: System demonstration and evaluation.
+2022-07-10: Proposal accepted.
+2022-07-30: Implementation planning.
+2022-08-15: System successfully deployed."
+0060000000000092,"BlueWave Group - 70 Operator Licenses",0010000000000019,"Closed Won","2023-02-20",105000,"New Business",100,"2022-11-25: License requirements discussion.
+2022-12-15: User needs assessment.
+2023-01-10: Pricing proposal submitted.
+2023-02-05: Contract finalized.
+2023-02-20: Licenses activated."
+0060000000000093,"BlueWave Group - Predictive Maintenance Module",0010000000000019,"Closed Won","2023-09-05",140000,"New Business",100,"2023-06-01: Initial requirements gathering.
+2023-06-20: Module demonstration and evaluation.
+2023-07-10: Technical assessment completed.
+2023-08-01: Proposal accepted.
+2023-08-25: Implementation planning.
+2023-09-05: Module successfully deployed."
+0060000000000094,"BlueWave Group - Annual Support Package",0010000000000019,"Closed Won","2024-03-10",75000,"Renewal",100,"2024-01-15: Sent support package renewal.
+2024-02-01: Discussed support needs for upcoming year.
+2024-02-20: Renewal agreement signed.
+2024-03-10: Support package renewed."
+0060000000000095,"BlueWave Group - Renewable Integration Platform",0010000000000019,"Negotiation/Review","2025-04-25",215000,"New Business",75,"2025-01-20: Initial discussion about renewable integration.
+2025-02-10: Platform demonstration to operations team.
+2025-03-01: Technical proof of concept completed.
+2025-03-20: Proposal submitted.
+2025-04-10: Currently in final negotiation phase."
+0060000000000096,"Everest Partners - Energy Trading System",0010000000000020,"Closed Won","2022-07-05",155000,"New Business",100,"2022-04-01: Initial meeting with trading team.
+2022-04-20: Requirements gathering sessions.
+2022-05-10: System demonstration and evaluation.
+2022-06-01: Proposal accepted.
+2022-06-20: Implementation planning.
+2022-07-05: System successfully deployed."
+0060000000000097,"Everest Partners - 60 Trader Licenses",0010000000000020,"Closed Won","2023-01-10",90000,"New Business",100,"2022-10-15: License requirements discussion.
+2022-11-05: User needs assessment.
+2022-11-25: Pricing proposal submitted.
+2022-12-15: Contract finalized.
+2023-01-10: Licenses activated."
+0060000000000098,"Everest Partners - Risk Analysis Module",0010000000000020,"Closed Lost","2023-08-01",125000,"New Business",0,"2023-05-05: Initial requirements gathering.
+2023-05-25: Module demonstration and evaluation.
+2023-06-15: Technical assessment period.
+2023-07-05: Compliance concerns identified.
+2023-07-20: Attempted to address regulatory issues.
+2023-08-01: Lost due to inability to meet specific regulatory requirements."
+0060000000000099,"Everest Partners - 30 Licenses ADD",0010000000000020,"Closed Won","2024-02-05",45000,"Expansion",100,"2023-12-01: Request for additional licenses.
+2023-12-20: User requirements confirmed.
+2024-01-15: Proposal submitted and accepted.
+2024-02-05: Additional licenses implemented."
+0060000000000100,"Everest Partners - AI Market Prediction Tool",0010000000000020,"Id. Decision Makers","2025-07-25",180000,"New Business",70,"2025-04-10: Initial discussion about AI prediction tools.
+2025-04-30: Tool demonstration to analytics team.
+2025-05-20: Technical assessment initiated.
+2025-06-15: Currently identifying key decision makers for final approval."
+0060000000000101,"Horizon Dynamics - Financial Reporting System",0010000000000021,"Closed Won","2022-09-20",135000,"New Business",100,"2022-06-15: Initial meeting with finance team.
+2022-07-05: Requirements gathering sessions.
+2022-07-25: System demonstration and evaluation.
+2022-08-15: Proposal accepted.
+2022-09-05: Implementation planning.
+2022-09-20: System successfully deployed."
+0060000000000102,"Horizon Dynamics - 80 Analyst Licenses",0010000000000021,"Closed Won","2023-03-05",120000,"New Business",100,"2022-12-10: License requirements discussion.
+2022-12-30: User needs assessment.
+2023-01-20: Pricing proposal submitted.
+2023-02-15: Contract finalized.
+2023-03-05: Licenses activated."
+0060000000000103,"Horizon Dynamics - Compliance Management Module",0010000000000021,"Closed Won","2023-10-01",110000,"New Business",100,"2023-07-05: Initial requirements gathering.
+2023-07-25: Module demonstration and evaluation.
+2023-08-15: Technical assessment completed.
+2023-09-01: Proposal accepted.
+2023-09-20: Implementation planning.
+2023-10-01: Module successfully deployed."
+0060000000000104,"Horizon Dynamics - Annual Maintenance",0010000000000021,"Closed Won","2024-04-01",65000,"Renewal",100,"2024-02-05: Sent maintenance renewal notification.
+2024-02-25: Discussed service level options.
+2024-03-15: Renewal agreement signed.
+2024-04-01: Maintenance services renewed."
+0060000000000105,"Horizon Dynamics - AI Financial Forecasting",0010000000000021,"Perception Analysis","2025-05-10",195000,"New Business",60,"2025-02-15: Initial discussion about AI forecasting.
+2025-03-05: Tool demonstration to finance team.
+2025-03-25: Technical assessment initiated.
+2025-04-15: Currently conducting perception analysis with stakeholders."
+0060000000000106,"BlueWave Networks - Learning Management System",0010000000000022,"Closed Won","2022-06-01",170000,"New Business",100,"2022-03-05: Initial meeting with education team.
+2022-03-25: Requirements gathering sessions.
+2022-04-15: System demonstration and evaluation.
+2022-05-05: Proposal accepted.
+2022-05-20: Implementation planning.
+2022-06-01: LMS successfully deployed."
+0060000000000107,"BlueWave Networks - 180 Instructor Licenses",0010000000000022,"Closed Won","2022-11-15",180000,"New Business",100,"2022-08-20: License requirements discussion.
+2022-09-10: User needs assessment.
+2022-09-30: Pricing proposal submitted.
+2022-10-25: Contract finalized.
+2022-11-15: Licenses activated."
+0060000000000108,"BlueWave Networks - Student Assessment Module",0010000000000022,"Closed Lost","2023-06-10",125000,"New Business",0,"2023-03-15: Initial requirements gathering.
+2023-04-05: Module demonstration and evaluation.
+2023-04-25: Technical assessment period.
+2023-05-15: Integration challenges identified.
+2023-05-30: Attempted to address technical issues.
+2023-06-10: Lost due to incompatibility with existing assessment standards."
+0060000000000109,"BlueWave Networks - 90 Licenses ADD",0010000000000022,"Closed Won","2024-01-05",90000,"Expansion",100,"2023-10-20: Request for additional licenses.
+2023-11-10: User requirements confirmed.
+2023-12-01: Proposal submitted and accepted.
+2024-01-05: Additional licenses implemented."
+0060000000000110,"BlueWave Networks - Virtual Reality Learning",0010000000000022,"Qualification","2025-08-01",230000,"New Business",30,"2025-05-15: Initial discussion about VR learning.
+2025-06-05: Preliminary requirements gathering.
+2025-07-01: Currently in qualification phase to determine fit."
+0060000000000111,"Skyline Consulting - Education Management Platform",0010000000000023,"Closed Won","2022-08-10",190000,"New Business",100,"2022-05-05: Initial meeting with education management team.
+2022-05-25: Requirements gathering sessions.
+2022-06-15: Platform demonstration and evaluation.
+2022-07-05: Proposal accepted.
+2022-07-25: Implementation planning.
+2022-08-10: Platform successfully deployed."
+0060000000000112,"Skyline Consulting - 200 Administrator Licenses",0010000000000023,"Closed Won","2023-02-15",200000,"New Business",100,"2022-11-20: License requirements discussion.
+2022-12-10: User needs assessment.
+2022-12-30: Pricing proposal submitted.
+2023-01-25: Contract finalized.
+2023-02-15: Licenses activated."
+0060000000000113,"Skyline Consulting - Parent Portal Development",0010000000000023,"Closed Won","2023-09-20",150000,"New Business",100,"2023-06-15: Initial requirements gathering.
+2023-07-05: Portal prototype demonstration.
+2023-07-25: Technical assessment completed.
+2023-08-15: Proposal accepted.
+2023-09-05: Development and testing.
+2023-09-20: Portal successfully launched."
+0060000000000114,"Skyline Consulting - 100 Licenses ADD",0010000000000023,"Closed Won","2024-03-25",100000,"Expansion",100,"2024-01-20: Request for additional licenses.
+2024-02-10: User requirements confirmed.
+2024-03-01: Proposal submitted and accepted.
+2024-03-25: Additional licenses implemented."
+0060000000000115,"Skyline Consulting - Data Analytics Dashboard",0010000000000023,"Needs Analysis","2025-06-15",175000,"New Business",40,"2025-03-20: Initial discussion about analytics needs.
+2025-04-10: Preliminary requirements gathering.
+2025-05-01: Currently conducting detailed needs analysis."
+0060000000000116,"Legacy Resources - Telecom Management System",0010000000000024,"Closed Won","2022-07-20",145000,"New Business",100,"2022-04-15: Initial meeting with telecom team.
+2022-05-05: Requirements gathering sessions.
+2022-05-25: System demonstration and evaluation.
+2022-06-15: Proposal accepted.
+2022-07-05: Implementation planning.
+2022-07-20: System successfully deployed."
+0060000000000117,"Legacy Resources - 65 Operator Licenses",0010000000000024,"Closed Won","2023-01-25",97500,"New Business",100,"2022-11-01: License requirements discussion.
+2022-11-20: User needs assessment.
+2022-12-10: Pricing proposal submitted.
+2023-01-10: Contract finalized.
+2023-01-25: Licenses activated."
+0060000000000118,"Legacy Resources - Network Monitoring Module",0010000000000024,"Closed Lost","2023-08-20",115000,"New Business",0,"2023-05-15: Initial requirements gathering.
+2023-06-05: Module demonstration and evaluation.
+2023-06-25: Technical assessment period.
+2023-07-15: Performance concerns identified.
+2023-08-05: Attempted to address technical issues.
+2023-08-20: Lost due to inability to meet specific performance requirements."
+0060000000000119,"Legacy Resources - 30 Licenses ADD",0010000000000024,"Closed Won","2024-02-10",45000,"Expansion",100,"2023-12-05: Request for additional licenses.
+2023-12-25: User requirements confirmed.
+2024-01-15: Proposal submitted and accepted.
+2024-02-10: Additional licenses implemented."
+0060000000000120,"Legacy Resources - 5G Network Management",0010000000000024,"Proposal/Price Quote","2025-05-05",185000,"New Business",65,"2025-02-01: Initial discussion about 5G management.
+2025-02-20: System demonstration to network team.
+2025-03-10: Technical assessment completed.
+2025-04-05: Proposal submitted, awaiting customer review."
+0060000000000121,"Pinnacle Group - Manufacturing Execution System",0010000000000025,"Closed Won","2022-09-05",195000,"New Business",100,"2022-06-01: Initial meeting with manufacturing team.
+2022-06-20: Requirements gathering sessions.
+2022-07-10: System demonstration and evaluation.
+2022-08-01: Proposal accepted.
+2022-08-20: Implementation planning.
+2022-09-05: MES successfully deployed."
+0060000000000122,"Pinnacle Group - 150 Operator Licenses",0010000000000025,"Closed Won","2023-03-10",150000,"New Business",100,"2022-12-15: License requirements discussion.
+2023-01-05: User needs assessment.
+2023-01-25: Pricing proposal submitted.
+2023-02-20: Contract finalized.
+2023-03-10: Licenses activated."
+0060000000000123,"Pinnacle Group - Quality Control Module",0010000000000025,"Closed Won","2023-10-05",130000,"New Business",100,"2023-07-01: Initial requirements gathering.
+2023-07-20: Module demonstration and evaluation.
+2023-08-10: Technical assessment completed.
+2023-09-01: Proposal accepted.
+2023-09-20: Implementation planning.
+2023-10-05: Module successfully deployed."
+0060000000000124,"Pinnacle Group - Annual Support Package",0010000000000025,"Closed Won","2024-04-05",85000,"Renewal",100,"2024-02-10: Sent support package renewal.
+2024-02-28: Discussed support needs for upcoming year.
+2024-03-20: Renewal agreement signed.
+2024-04-05: Support package renewed."
+0060000000000125,"Pinnacle Group - IoT Factory Automation",0010000000000025,"Value Proposition","2025-07-01",250000,"New Business",50,"2025-04-05: Initial discussion about factory automation.
+2025-04-25: Preliminary concept presentation.
+2025-05-15: Site assessment conducted.
+2025-06-05: Currently developing detailed value proposition."
+0060000000000126,"Vertex Strategies - Retail Management System",0010000000000026,"Closed Won","2022-06-25",125000,"New Business",100,"2022-03-20: Initial meeting with retail operations team.
+2022-04-10: Requirements gathering sessions.
+2022-04-30: System demonstration and evaluation.
+2022-05-20: Proposal accepted.
+2022-06-10: Implementation planning.
+2022-06-25: System successfully deployed."
+0060000000000127,"Vertex Strategies - 60 Store Licenses",0010000000000026,"Closed Won","2022-12-05",90000,"New Business",100,"2022-09-10: License requirements discussion.
+2022-09-30: User needs assessment.
+2022-10-20: Pricing proposal submitted.
+2022-11-15: Contract finalized.
+2022-12-05: Licenses activated."
+0060000000000128,"Vertex Strategies - Inventory Optimization Module",0010000000000026,"Closed Lost","2023-07-10",105000,"New Business",0,"2023-04-05: Initial requirements gathering.
+2023-04-25: Module demonstration and evaluation.
+2023-05-15: Technical assessment period.
+2023-06-05: Integration challenges identified.
+2023-06-25: Attempted to address technical issues.
+2023-07-10: Lost due to complexity of integration with legacy inventory systems."
+0060000000000129,"Vertex Strategies - 30 Licenses ADD",0010000000000026,"Closed Won","2024-01-15",45000,"Expansion",100,"2023-11-10: Request for additional licenses.
+2023-11-30: User requirements confirmed.
+2023-12-20: Proposal submitted and accepted.
+2024-01-15: Additional licenses implemented."
+0060000000000130,"Vertex Strategies - Omnichannel Retail Platform",0010000000000026,"Prospecting","2025-08-10",175000,"New Business",20,"2025-06-01: Initial outreach about omnichannel retail.
+2025-06-20: Preliminary discussion with retail director.
+2025-07-10: Currently in early prospecting phase."
+0060000000000131,"Legacy Corporation - Education Analytics Platform",0010000000000027,"Closed Won","2022-08-25",155000,"New Business",100,"2022-05-20: Initial meeting with education analytics team.
+2022-06-10: Requirements gathering sessions.
+2022-06-30: Platform demonstration and evaluation.
+2022-07-20: Proposal accepted.
+2022-08-10: Implementation planning.
+2022-08-25: Platform successfully deployed."
+0060000000000132,"Legacy Corporation - 75 Analyst Licenses",0010000000000027,"Closed Won","2023-02-05",112500,"New Business",100,"2022-11-10: License requirements discussion.
+2022-11-30: User needs assessment.
+2022-12-20: Pricing proposal submitted.
+2023-01-15: Contract finalized.
+2023-02-05: Licenses activated."
+0060000000000133,"Legacy Corporation - Student Performance Module",0010000000000027,"Closed Won","2023-09-10",95000,"New Business",100,"2023-06-05: Initial requirements gathering.
+2023-06-25: Module demonstration and evaluation.
+2023-07-15: Technical assessment completed.
+2023-08-05: Proposal accepted.
+2023-08-25: Implementation planning.
+2023-09-10: Module successfully deployed."
+0060000000000134,"Legacy Corporation - Annual Maintenance",0010000000000027,"Closed Won","2024-03-01",55000,"Renewal",100,"2024-01-05: Sent maintenance renewal notification.
+2024-01-25: Discussed service level options.
+2024-02-15: Renewal agreement signed.
+2024-03-01: Maintenance services renewed."
+0060000000000135,"Legacy Corporation - Predictive Learning Outcomes",0010000000000027,"Qualification","2025-05-25",165000,"New Business",30,"2025-03-01: Initial discussion about predictive analytics.
+2025-03-20: Preliminary requirements gathering.
+2025-04-10: Currently in qualification phase to determine fit."
+0060000000000136,"Legacy Partners - Energy Management Platform",0010000000000028,"Closed Won","2022-07-15",140000,"New Business",100,"2022-04-10: Initial meeting with energy management team.
+2022-04-30: Requirements gathering sessions.
+2022-05-20: Platform demonstration and evaluation.
+2022-06-10: Proposal accepted.
+2022-06-30: Implementation planning.
+2022-07-15: Platform successfully deployed."
+0060000000000137,"Legacy Partners - 50 Operator Licenses",0010000000000028,"Closed Won","2023-01-20",75000,"New Business",100,"2022-10-15: License requirements discussion.
+2022-11-05: User needs assessment.
+2022-11-25: Pricing proposal submitted.
+2022-12-20: Contract finalized.
+2023-01-20: Licenses activated."
+0060000000000138,"Legacy Partners - Renewable Energy Module",0010000000000028,"Closed Lost","2023-08-10",120000,"New Business",0,"2023-05-05: Initial requirements gathering.
+2023-05-25: Module demonstration and evaluation.
+2023-06-15: Technical assessment period.
+2023-07-05: ROI concerns identified.
+2023-07-25: Attempted to revise value proposition.
+2023-08-10: Lost due to insufficient projected ROI and budget constraints."
+0060000000000139,"Legacy Partners - 25 Licenses ADD",0010000000000028,"Closed Won","2024-02-15",37500,"Expansion",100,"2023-12-10: Request for additional licenses.
+2023-12-30: User requirements confirmed.
+2024-01-20: Proposal submitted and accepted.
+2024-02-15: Additional licenses implemented."
+0060000000000140,"Legacy Partners - Smart Grid Analytics",0010000000000028,"Id. Decision Makers","2025-06-05",175000,"New Business",70,"2025-03-10: Initial discussion about grid analytics.
+2025-03-30: Analytics demonstration to operations team.
+2025-04-20: Technical assessment initiated.
+2025-05-15: Currently identifying key decision makers for final approval."
+0060000000000141,"Fusion Dynamics - Energy Trading Platform",0010000000000029,"Closed Won","2022-09-10",165000,"New Business",100,"2022-06-05: Initial meeting with trading team.
+2022-06-25: Requirements gathering sessions.
+2022-07-15: Platform demonstration and evaluation.
+2022-08-05: Proposal accepted.
+2022-08-25: Implementation planning.
+2022-09-10: Platform successfully deployed."
+0060000000000142,"Fusion Dynamics - 80 Trader Licenses",0010000000000029,"Closed Won","2023-03-15",120000,"New Business",100,"2022-12-10: License requirements discussion.
+2022-12-30: User needs assessment.
+2023-01-20: Pricing proposal submitted.
+2023-02-15: Contract finalized.
+2023-03-15: Licenses activated."
+0060000000000143,"Fusion Dynamics - Risk Management Module",0010000000000029,"Closed Won","2023-10-10",135000,"New Business",100,"2023-07-05: Initial requirements gathering.
+2023-07-25: Module demonstration and evaluation.
+2023-08-15: Technical assessment completed.
+2023-09-05: Proposal accepted.
+2023-09-25: Implementation planning.
+2023-10-10: Module successfully deployed."
+0060000000000144,"Fusion Dynamics - Annual Support Package",0010000000000029,"Closed Won","2024-04-10",75000,"Renewal",100,"2024-02-15: Sent support package renewal.
+2024-03-05: Discussed support needs for upcoming year.
+2024-03-25: Renewal agreement signed.
+2024-04-10: Support package renewed."
+0060000000000145,"Fusion Dynamics - AI Market Prediction Tool",0010000000000029,"Perception Analysis","2025-07-05",205000,"New Business",60,"2025-04-10: Initial discussion about AI prediction tools.
+2025-04-30: Tool demonstration to trading team.
+2025-05-20: Technical assessment initiated.
+2025-06-10: Currently conducting perception analysis with stakeholders."
+0060000000000146,"Legacy Dynamics - Manufacturing Execution System",0010000000000030,"Closed Won","2022-06-10",150000,"New Business",100,"2022-03-05: Initial meeting with manufacturing team.
+2022-03-25: Requirements gathering sessions.
+2022-04-15: System demonstration and evaluation.
+2022-05-05: Proposal accepted.
+2022-05-25: Implementation planning.
+2022-06-10: MES successfully deployed."
+0060000000000147,"Legacy Dynamics - 60 Operator Licenses",0010000000000030,"Closed Won","2022-11-20",90000,"New Business",100,"2022-09-05: License requirements discussion.
+2022-09-25: User needs assessment.
+2022-10-15: Pricing proposal submitted.
+2022-11-05: Contract finalized.
+2022-11-20: Licenses activated."
+0060000000000148,"Legacy Dynamics - Quality Assurance Module",0010000000000030,"Closed Lost","2023-06-15",105000,"New Business",0,"2023-03-10: Initial requirements gathering.
+2023-03-30: Module demonstration and evaluation.
+2023-04-20: Technical assessment period.
+2023-05-10: Integration challenges identified.
+2023-05-30: Attempted to address technical issues.
+2023-06-15: Lost due to incompatibility with existing quality control processes."
+0060000000000149,"Legacy Dynamics - 30 Licenses ADD",0010000000000030,"Closed Won","2024-01-10",45000,"Expansion",100,"2023-11-05: Request for additional licenses.
+2023-11-25: User requirements confirmed.
+2023-12-15: Proposal submitted and accepted.
+2024-01-10: Additional licenses implemented."
+0060000000000150,"Legacy Dynamics - IoT Production Monitoring",0010000000000030,"Needs Analysis","2025-05-20",175000,"New Business",40,"2025-02-25: Initial discussion about IoT monitoring.
+2025-03-15: Preliminary requirements gathering.
+2025-04-05: Currently conducting detailed needs analysis."
+0060000000000151,"Fusion Networks - Telecom Management System",0010000000000031,"Closed Won","2022-08-05",155000,"New Business",100,"2022-05-01: Initial meeting with telecom team.
+2022-05-20: Requirements gathering sessions.
+2022-06-10: System demonstration and evaluation.
+2022-07-01: Proposal accepted.
+2022-07-20: Implementation planning.
+2022-08-05: System successfully deployed."
+0060000000000152,"Fusion Networks - 70 Administrator Licenses",0010000000000031,"Closed Won","2023-02-10",105000,"New Business",100,"2022-11-15: License requirements discussion.
+2022-12-05: User needs assessment.
+2022-12-25: Pricing proposal submitted.
+2023-01-20: Contract finalized.
+2023-02-10: Licenses activated."
+0060000000000153,"Fusion Networks - Network Monitoring Module",0010000000000031,"Closed Won","2023-09-15",125000,"New Business",100,"2023-06-10: Initial requirements gathering.
+2023-06-30: Module demonstration and evaluation.
+2023-07-20: Technical assessment completed.
+2023-08-10: Proposal accepted.
+2023-08-30: Implementation planning.
+2023-09-15: Module successfully deployed."
+0060000000000154,"Fusion Networks - Annual Maintenance",0010000000000031,"Closed Won","2024-03-05",65000,"Renewal",100,"2024-01-10: Sent maintenance renewal notification.
+2024-01-30: Discussed service level options.
+2024-02-20: Renewal agreement signed.
+2024-03-05: Maintenance services renewed."
+0060000000000155,"Fusion Networks - 5G Network Management",0010000000000031,"Value Proposition","2025-06-25",195000,"New Business",50,"2025-03-20: Initial discussion about 5G management.
+2025-04-10: Preliminary concept presentation.
+2025-05-01: Technical assessment initiated.
+2025-05-20: Currently developing detailed value proposition."
