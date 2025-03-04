@@ -16,20 +16,4 @@
         <visibility>Visible</visibility>
     </tabSettings>
     
-    <!-- Platform Event Access -->
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>UIInstruction__e</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
-    
-    <!-- Apex Class Access -->
-    <classAccesses>
-        <apexClass>PromptViaUserInterfaceAction</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
 </PermissionSet>
