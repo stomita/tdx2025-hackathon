@@ -1,7 +1,7 @@
 # Clinerules for Salesforce Custom Development Project
 
 ## Language Rules
-- Respond in the language used by the task requester, but always write code metadata and code comments in English.
+- Respond in the language used by the task requester, but always write code, metadata, UI messages, and code comments in English.
 - When providing code examples, ensure all variable names, function names, and comments follow Salesforce naming conventions.
 
 ## Project Information
