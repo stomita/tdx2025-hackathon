@@ -18,3 +18,4 @@
 - Follow Salesforce security best practices when writing Apex code.
 - Ensure Lightning Web Components are properly structured and follow component design principles.
 - Write comprehensive test classes for all Apex code with appropriate assertions.
+- XML error for metadata files can be ignored.
