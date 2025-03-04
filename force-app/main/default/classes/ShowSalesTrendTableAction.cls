@@ -26,7 +26,7 @@ public with sharing class ShowSalesTrendTableAction {
         }
         String paramsJSON = JSON.serialize(requests[0]);
         EventBus.publish(
-            new UIInstruction__e(Command__c = 'showSalesTrend', Parameters__c = paramsJSON)
+            new UIInstruction__e(Command__c = 'showSalesTrendTable', Parameters__c = paramsJSON)
         );
         return new List<Boolean>{ true };
     }

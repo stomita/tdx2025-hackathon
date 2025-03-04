@@ -125,6 +125,19 @@ public with sharing class PieChartMetricController {
         String aggregateFunction,
         List<FilterCondition> filters
     ) {
+        // Get object schema information
+        Map<String, Schema.SObjectField> fieldMap;
+        try {
+            Schema.SObjectType objectType = Schema.getGlobalDescribe().get(objectName);
+            if (objectType != null) {
+                fieldMap = objectType.getDescribe().fields.getMap();
+            } else {
+                fieldMap = new Map<String, Schema.SObjectField>();
+            }
+        } catch (Exception e) {
+            System.debug('Error getting schema information: ' + e.getMessage());
+            fieldMap = new Map<String, Schema.SObjectField>();
+        }
         // Format aggregate function
         String aggregateExpr = aggregateFunction + '(' + aggregateField + ')';
         String aggregateAlias = 'aggregateValue';
@@ -155,9 +168,19 @@ public with sharing class PieChartMetricController {
                     }
                     formattedValue = '(' + String.join(formattedValues, ',') + ')';
                 } else {
-                    // Check if the value is a Boolean
-                    if (value.equalsIgnoreCase('true') || value.equalsIgnoreCase('false')) {
+                    // Get field type from schema
+                    Schema.DisplayType fieldType = null;
+                    if (fieldMap.containsKey(fieldName)) {
+                        Schema.DescribeFieldResult fieldDescribe = fieldMap.get(fieldName).getDescribe();
+                        fieldType = fieldDescribe.getType();
+                    }
+                    
+                    // Format value based on field type
+                    if (fieldType == Schema.DisplayType.BOOLEAN) {
                         formattedValue = value.toLowerCase(); // Don't quote Boolean values
+                    } else if (fieldType == Schema.DisplayType.DATE ||
+                              fieldType == Schema.DisplayType.DATETIME) {
+                        formattedValue = value; // Don't quote Date/DateTime values
                     } else {
                         formattedValue = '\'' + String.escapeSingleQuotes(value) + '\'';
                     }
