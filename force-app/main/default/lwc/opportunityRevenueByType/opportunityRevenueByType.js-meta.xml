@@ -11,4 +11,9 @@
         <target>lightningCommunity__Page</target>
         <target>lightningCommunity__Default</target>
     </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__AppPage,lightning__HomePage,lightning__RecordPage,lightningCommunity__Default">
+            <property name="highlightThreshold" type="Integer" label="Highlight Threshold" description="Values greater than or equal to this threshold will be highlighted" />
+        </targetConfig>
+    </targetConfigs>
 </LightningComponentBundle>

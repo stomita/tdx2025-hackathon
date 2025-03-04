@@ -15,7 +15,7 @@ export default class MatrixDataTable extends LightningElement {
     
     // Private variable for filter conditions
     _filterConditions;
-    
+
     // Getter and setter for filter conditions
     @api
     get filterConditions() {
@@ -30,7 +30,24 @@ export default class MatrixDataTable extends LightningElement {
         }
     }
     
-    @api highlightThreshold; // Threshold value to highlight cells with values greater than or equal to this
+    // Private variable for highlight threshold
+    _highlightThreshold;
+    
+    // Getter and setter for highlight threshold
+    @api
+    get highlightThreshold() {
+        return this._highlightThreshold;
+    }
+    
+    set highlightThreshold(value) {
+        this._highlightThreshold = value;
+        // If we already have matrix data, just reprocess it with the new threshold
+        // instead of fetching data again
+        if (this.matrixData) {
+            // Set loading state to prevent "No Data available" message
+            this.reprocessMatrixData();
+        }
+    }
     
     // Private properties
     @track isLoading = false;
@@ -42,15 +59,20 @@ export default class MatrixDataTable extends LightningElement {
 
     // Lifecycle hooks
     connectedCallback() {
+        console.log('matrixDataTable: connected callback called');
         // If all required properties are provided, fetch data automatically
         if (this.areRequiredPropertiesSet()) {
             this.fetchMatrixData();
         }
     }
     
+    // Private tracking variables
+    _lastFetchParams = null;
+    
     // Public methods
     @api
     refresh() {
+        console.log('matrixDataTable: refresh called');
         if (this.areRequiredPropertiesSet()) {
             this.fetchMatrixData();
         } else {
@@ -79,7 +101,8 @@ export default class MatrixDataTable extends LightningElement {
             }
         }
         
-        getMatrixData({
+        // Create current params object to compare with last fetch
+        const currentParams = {
             objectName: this.objectName,
             rowField: this.rowField,
             columnField: this.columnField,
@@ -88,31 +111,59 @@ export default class MatrixDataTable extends LightningElement {
             rowDateGrouping: this.rowDateGrouping,
             columnDateGrouping: this.columnDateGrouping,
             filterConditions: filterConditionsJson
-        })
-        .then(result => {
-            this.processMatrixData(result);
-            this.isLoading = false;
-        })
-        .catch(error => {
-            this.error = 'Error retrieving matrix data: ' + this.reduceErrors(error);
-            this.matrixData = undefined;
-            this.matrixHeaders = [];
-            this.matrixRows = [];
-            this.isLoading = false;
-        });
+        };
+        
+        // Check if we need to fetch new data or just reprocess existing data
+        // We don't include highlightThreshold in this comparison because
+        // changing threshold doesn't require new data fetch
+        const needNewData = !this._lastFetchParams ||
+            JSON.stringify(currentParams) !== JSON.stringify(this._lastFetchParams);
+        
+        if (needNewData) {
+            // Save current params for future comparison
+            this._lastFetchParams = currentParams;
+            
+            getMatrixData(currentParams)
+            .then(result => {
+                this.processMatrixData(result);
+                this.isLoading = false;
+            })
+            .catch(error => {
+                this.error = 'Error retrieving matrix data: ' + this.reduceErrors(error);
+                this.matrixData = undefined;
+                this.matrixHeaders = [];
+                this.matrixRows = [];
+                this.isLoading = false;
+            });
+        } else {
+            // Just reprocess existing data with new threshold
+            // Keep isLoading true during reprocessing to prevent "No Data available" message
+            if (this.matrixData) {
+                // Use setTimeout to ensure UI updates with loading state before processing
+                setTimeout(() => {
+                    this.reprocessMatrixData();
+                    this.isLoading = false;
+                }, 0);
+            } else {
+                this.isLoading = false;
+            }
+        }
     }
     
     processMatrixData(data) {
         if (!data || !data.matrixData || data.matrixData.length === 0) {
+            console.log('No matrix data is given');
             this.matrixData = undefined;
             this.matrixHeaders = [];
             this.matrixRows = [];
             this.selectedCell = null;
             return;
         }
-        
         this.matrixData = data.matrixData;
-        
+        this.reprocessMatrixData();
+    }
+
+    reprocessMatrixData() {
         // Process headers (first row of matrix data)
         const headerRow = this.matrixData[0];
         this.matrixHeaders = headerRow.map(header => header !== '' ? header : '');
@@ -254,6 +305,7 @@ export default class MatrixDataTable extends LightningElement {
     }
     
     get showNoDataMessage() {
+        console.log('hasMatrixData', this.hasMatrixData, JSON.stringify(this.matrixData));
         return !this.isLoading && !this.error && !this.hasMatrixData && this.areRequiredPropertiesSet();
     }
     

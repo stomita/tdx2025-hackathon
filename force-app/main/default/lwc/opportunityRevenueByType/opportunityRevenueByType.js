@@ -1,4 +1,4 @@
-import { LightningElement, track } from 'lwc';
+import { LightningElement, track, api } from 'lwc';
 
 export default class OpportunityRevenueByType extends LightningElement {
     // Title
@@ -11,6 +11,9 @@ export default class OpportunityRevenueByType extends LightningElement {
     aggregateField = 'Amount';
     aggregateFunction = 'SUM';
     columnDateGrouping = 'MONTH';
+    
+    // Highlight threshold property
+    @api highlightThreshold;
     
     // Filter condition for IsWon = true
     @track filterConditions = [
