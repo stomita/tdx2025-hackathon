@@ -11,8 +11,25 @@ export default class MatrixDataTable extends LightningElement {
     @api aggregateFunction = 'COUNT';
     @api rowDateGrouping;
     @api columnDateGrouping;
-    @api filterConditions;
-    @api highlightThreshold; // 指定した値以上のセルをハイライト表示するためのしきい値
+    
+    // Private variable for filter conditions
+    _filterConditions;
+    
+    // Getter and setter for filter conditions
+    @api
+    get filterConditions() {
+        return this._filterConditions;
+    }
+    
+    set filterConditions(value) {
+        this._filterConditions = value;
+        // Refresh matrix data when filter conditions change
+        if (this.areRequiredPropertiesSet()) {
+            this.fetchMatrixData();
+        }
+    }
+    
+    @api highlightThreshold; // Threshold value to highlight cells with values greater than or equal to this
     
     // Private properties
     @track isLoading = false;
@@ -118,10 +135,10 @@ export default class MatrixDataTable extends LightningElement {
                 // Determine cell class
                 let cellClass = isHeader ? 'slds-cell-wrap' : 'slds-cell-wrap data-cell';
                 
-                // ハイライト表示の条件チェック
-                if (!isHeader && 
-                    this.highlightThreshold && 
-                    typeof cellValue === 'number' && 
+                // Check if cell value meets highlight threshold condition
+                if (!isHeader &&
+                    this.highlightThreshold &&
+                    typeof cellValue === 'number' &&
                     cellValue >= Number(this.highlightThreshold)) {
                     cellClass += ' highlighted-cell';
                 }

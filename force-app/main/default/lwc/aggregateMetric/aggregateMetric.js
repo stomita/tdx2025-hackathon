@@ -7,7 +7,24 @@ export default class AggregateMetric extends LightningElement {
     @api objectName;
     @api aggregateField;
     @api aggregateFunction = 'COUNT';
-    @api filterConditions;
+    
+    // Private variable for filter conditions
+    _filterConditions;
+    
+    // Getter and setter for filter conditions
+    @api
+    get filterConditions() {
+        return this._filterConditions;
+    }
+    
+    set filterConditions(value) {
+        this._filterConditions = value;
+        // Refresh metric data when filter conditions change
+        if (this.areRequiredPropertiesSet()) {
+            this.fetchMetricData();
+        }
+    }
+    
     @api icon = 'utility:metrics';
     @api iconSize = 'large';
     @api iconVariant = 'inverse';

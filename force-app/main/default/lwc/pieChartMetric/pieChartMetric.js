@@ -10,7 +10,24 @@ export default class PieChartMetric extends LightningElement {
     @api groupByField;
     @api aggregateField;
     @api aggregateFunction = 'COUNT';
-    @api filterConditions;
+    
+    // Private variable for filter conditions
+    _filterConditions;
+    
+    // Getter and setter for filter conditions
+    @api
+    get filterConditions() {
+        return this._filterConditions;
+    }
+    
+    set filterConditions(value) {
+        this._filterConditions = value;
+        // Refresh chart data when filter conditions change
+        if (this.chartjsInitialized && this.areRequiredPropertiesSet()) {
+            this.fetchChartData();
+        }
+    }
+    
     @api maxSlices = 5;
     @api showLegend = false;
     @api height = '400px';
@@ -217,7 +234,7 @@ export default class PieChartMetric extends LightningElement {
                 }]
             },
             options: {
-                responsive: true,
+                responsive: false,
                 maintainAspectRatio: false,
                 legend: {
                     display: this.showLegend,
