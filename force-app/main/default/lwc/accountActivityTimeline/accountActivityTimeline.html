@@ -1,0 +1,120 @@
+<template>
+    <div class="slds-card">
+        <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__figure">
+                    <lightning-icon icon-name="standard:history" size="small"></lightning-icon>
+                </div>
+                <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                        <span class="slds-text-heading_small">Account Activity Timeline</span>
+                    </h2>
+                </div>
+            </header>
+        </div>
+        <div class="slds-card__body slds-card__body_inner">
+            <!-- Loading spinner -->
+            <template if:true={isLoading}>
+                <div class="slds-is-relative slds-p-around_medium">
+                    <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+                </div>
+            </template>
+            
+            <!-- Error message -->
+            <template if:true={error}>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert">
+                    <span class="slds-assistive-text">Error</span>
+                    <h2>{error}</h2>
+                </div>
+            </template>
+            
+            <!-- Activity Timeline -->
+            <template if:true={hasActivities}>
+                <ul class="slds-timeline">
+                    <template for:each={activities} for:item="activity">
+                        <li key={activity.id}>
+                            <div class={activity.timelineItemClass}>
+                                <span class="slds-assistive-text">{activity.type}</span>
+                                <div class="slds-media">
+                                    <div class="slds-media__figure">
+                                        <template if:true={activity.description}>
+                                            <button class="slds-button slds-button_icon"
+                                                    title="Toggle details"
+                                                    onclick={toggleDescription}
+                                                    data-id={activity.id}
+                                                    aria-expanded={activity.showDescription}>
+                                                <lightning-icon icon-name="utility:switch"
+                                                              size="x-small"
+                                                              class="slds-button__icon slds-timeline__details-action-icon"></lightning-icon>
+                                                <span class="slds-assistive-text">Toggle details for {activity.title}</span>
+                                            </button>
+                                        </template>
+                                        <div class="slds-icon_container slds-timeline__icon">
+                                            <template if:true={activity.isTask}>
+                                                <lightning-icon icon-name="standard:task" size="small"></lightning-icon>
+                                            </template>
+                                            <template if:true={activity.isEvent}>
+                                                <lightning-icon icon-name="standard:event" size="small"></lightning-icon>
+                                            </template>
+                                            <template if:true={activity.isEmail}>
+                                                <lightning-icon icon-name="standard:email" size="small"></lightning-icon>
+                                            </template>
+                                        </div>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                                            <div class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+                                                <h3 class="slds-truncate" title={activity.title}>
+                                                    <a href="javascript:void(0);" onclick={handleActivityClick} data-id={activity.id}>
+                                                        <strong>{activity.title}</strong>
+                                                    </a>
+                                                </h3>
+                                                <template if:true={activity.isHighPriority}>
+                                                    <div class="slds-no-flex">
+                                                        <span class="slds-badge slds-badge_error">High Priority</span>
+                                                    </div>
+                                                </template>
+                                            </div>
+                                            <div class="slds-timeline__actions slds-timeline__actions_inline">
+                                                <p class="slds-timeline__date">{activity.formattedDate}</p>
+                                            </div>
+                                        </div>
+                                        <p class="slds-m-horizontal_xx-small">
+                                            <template if:true={activity.owner}>
+                                                <span class="slds-text-body_small">Owner: {activity.owner}</span>
+                                            </template>
+                                            <template if:true={activity.status}>
+                                                <span class="slds-text-body_small slds-m-left_small">Status: {activity.status}</span>
+                                            </template>
+                                        </p>
+                                        <template if:true={activity.description}>
+                                            <template if:true={activity.showDescription}>
+                                                <article class="slds-box slds-timeline__item_details slds-theme_shade slds-m-top_x-small slds-m-horizontal_xx-small slds-p-around_medium"
+                                                         id={activity.detailsId}>
+                                                    <div>
+                                                        <span class="slds-text-title">Description</span>
+                                                        <p class="slds-p-top_x-small">{activity.description}</p>
+                                                    </div>
+                                                </article>
+                                            </template>
+                                        </template>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </template>
+                </ul>
+            </template>
+            
+            <!-- No activities message -->
+            <template if:false={hasActivities}>
+                <div class="slds-illustration slds-illustration_small" aria-hidden="true">
+                    <div class="slds-text-longform">
+                        <h3 class="slds-text-heading_medium">No activities found</h3>
+                        <p class="slds-text-body_regular">There are no activities for this account yet.</p>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

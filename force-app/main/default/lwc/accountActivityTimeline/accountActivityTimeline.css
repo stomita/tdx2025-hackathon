@@ -1,0 +1,90 @@
+/* Timeline container styles */
+.slds-timeline {
+    margin-left: 1.5rem;
+    position: relative;
+}
+
+/* Timeline item styles */
+.slds-timeline__item_expandable {
+    position: relative;
+    padding-bottom: 2rem;
+    margin-left: 1.25rem;
+}
+
+/* Timeline vertical line */
+.slds-timeline__item_expandable:before {
+    content: '';
+    position: absolute;
+    left: -1.5rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #dddbda;
+}
+
+/* Timeline horizontal line */
+.slds-timeline__item_expandable:after {
+    content: '';
+    position: absolute;
+    left: -1.5rem;
+    top: 0.75rem;
+    width: 1rem;
+    height: 2px;
+    background-color: #dddbda;
+}
+
+/* Icon container styles */
+.slds-timeline__icon {
+    position: absolute;
+    left: -2.25rem;
+    top: 0.25rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid #dddbda;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+/* Toggle button styles */
+.slds-button_icon {
+    position: absolute;
+    left: -3.25rem;
+    top: 0.25rem;
+    z-index: 2;
+}
+
+/* Date styles */
+.slds-timeline__date {
+    color: #706e6b;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+}
+
+/* Trigger area styles */
+.slds-timeline__trigger {
+    padding: 0.25rem 0;
+}
+
+/* Details container styles */
+.slds-timeline__details_container {
+    margin-left: 0.5rem;
+}
+
+/* Animation for details expansion */
+.slds-timeline__item_details {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Icon rotation animation */
+.slds-timeline__details-action-icon {
+    transform: rotate(-90deg); /* Start with right-facing icon */
+    transition: transform 0.2s ease-in-out;
+}
+
+.slds-button[aria-expanded="true"] .slds-timeline__details-action-icon {
+    transform: rotate(0deg); /* Rotate to down-facing icon when expanded */
+}
