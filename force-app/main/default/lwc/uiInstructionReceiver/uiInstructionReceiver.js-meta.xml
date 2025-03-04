@@ -7,5 +7,25 @@
         <target>lightning__AppPage</target>
         <target>lightning__HomePage</target>
     </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__AppPage">
+            <event name="showaccountinfo" label="Show Account Info" description="Event fired when an account should be displayed">
+                <schema>
+                    <![CDATA[
+                    {
+                        "type": "object",
+                        "properties": {
+                            "recordId": {
+                                "type": "string",
+                                "title": "Record ID",
+                                "description": "The ID of the account record to display"
+                            }
+                        }
+                    }
+                    ]]>
+                </schema>
+            </event>
+        </targetConfig>
+    </targetConfigs>
     <description>Receives UI instructions from platform events and performs actions</description>
 </LightningComponentBundle>

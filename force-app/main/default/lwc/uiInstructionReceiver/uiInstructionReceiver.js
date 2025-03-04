@@ -112,8 +112,17 @@ export default class UiInstructionReceiver extends LightningElement {
     // Handle showAccountInfo command
     handleShowAccountInfo(recordId) {
         console.log('Showing account info for record: ' + recordId);
-        // Implement actual functionality here
-        // Example: show modal, navigate to record, etc.
+        
+        // Dispatch custom event for Dynamic Interactions
+        const showAccountEvent = new CustomEvent('showaccountinfo', {
+            detail: {
+                recordId: recordId
+            }
+        });
+        
+        // Dispatch the event
+        this.dispatchEvent(showAccountEvent);
+        console.log('Dispatched showaccountinfo event with recordId: ' + recordId);
     }
     
     // Clear event history
