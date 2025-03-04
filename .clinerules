@@ -1,0 +1,20 @@
+# Clinerules for Salesforce Custom Development Project
+
+## Language Rules
+- Respond in the language used by the task requester, but always write code metadata and code comments in English.
+- When providing code examples, ensure all variable names, function names, and comments follow Salesforce naming conventions.
+
+## Project Information
+- This is a Salesforce custom development project.
+- The project utilizes Salesforce technologies including Apex, Lightning Web Components (LWC), and Platform Events.
+- The codebase follows Salesforce development best practices and design patterns.
+
+## Available Tools
+- Salesforce CLI is available for deployment, retrieval, and other Salesforce-related operations.
+- Use SFDX commands for org management, metadata deployment, and development tasks.
+- Leverage Salesforce CLI for data manipulation, testing, and debugging.
+
+## Development Guidelines
+- Follow Salesforce security best practices when writing Apex code.
+- Ensure Lightning Web Components are properly structured and follow component design principles.
+- Write comprehensive test classes for all Apex code with appropriate assertions.

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides access to the Agentic App, its tabs, and related components</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Agentic App Access</label>
+    
+    <!-- Application Access -->
+    <applicationVisibilities>
+        <application>AgenticApp</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    
+    <!-- Tab Access -->
+    <tabSettings>
+        <tab>AgenticCockpit</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    
+    <!-- Platform Event Access -->
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>UIInstruction__e</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    
+    <!-- Apex Class Access -->
+    <classAccesses>
+        <apexClass>PromptViaUserInterfaceAction</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+</PermissionSet>

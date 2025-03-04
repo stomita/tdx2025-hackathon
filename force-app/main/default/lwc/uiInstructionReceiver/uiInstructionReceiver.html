@@ -1,0 +1,95 @@
+<template>
+    <div class="slds-card slds-p-around_medium">
+        <div class="slds-text-heading_small slds-m-bottom_small">UI Instruction Receiver</div>
+        <div class="slds-text-body_small">
+            This component listens for UIInstruction__e platform events and performs actions based on the received commands.
+        </div>
+        <div class="slds-m-top_small slds-text-body_small">
+            Status: <span class="slds-text-color_success">Active and listening for events</span>
+        </div>
+        
+        <!-- Last Event Received -->
+        <div class="slds-m-top_medium">
+            <div class="slds-text-heading_small slds-m-bottom_small">Last Event Received</div>
+            <template if:true={lastEventReceived.timestamp}>
+                <div class="slds-box slds-theme_shade slds-m-bottom_medium">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col">
+                            <div class="slds-text-title">Command</div>
+                            <div class="slds-text-body_regular slds-m-top_xx-small">{lastEventReceived.command}</div>
+                        </div>
+                        <div class="slds-col">
+                            <div class="slds-text-title">Record ID</div>
+                            <div class="slds-text-body_regular slds-m-top_xx-small">{lastEventReceived.recordId}</div>
+                        </div>
+                    </div>
+                    <div class="slds-m-top_small">
+                        <div class="slds-text-title">Parameters</div>
+                        <div class="slds-text-body_regular slds-m-top_xx-small slds-box slds-theme_default slds-p-around_x-small">
+                            <pre>{lastEventReceived.parameters}</pre>
+                        </div>
+                    </div>
+                    <div class="slds-text-body_small slds-m-top_small">
+                        Received at: {lastEventReceived.timestamp}
+                    </div>
+                </div>
+            </template>
+            <template if:false={lastEventReceived.timestamp}>
+                <div class="slds-box slds-theme_shade slds-m-bottom_medium">
+                    <div class="slds-text-body_regular slds-text-align_center">No events received yet</div>
+                </div>
+            </template>
+        </div>
+        
+        <!-- Event History -->
+        <div class="slds-m-top_medium">
+            <div class="slds-grid slds-grid_vertical-align-center">
+                <div class="slds-col">
+                    <div class="slds-text-heading_small">Event History</div>
+                </div>
+                <div class="slds-col slds-text-align_right">
+                    <lightning-button
+                        label="Clear History"
+                        variant="neutral"
+                        onclick={clearHistory}
+                        disabled={isHistoryEmpty}>
+                    </lightning-button>
+                </div>
+            </div>
+            
+            <template if:true={eventHistory.length}>
+                <div class="slds-m-top_small">
+                    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <th scope="col">
+                                    <div class="slds-truncate" title="Time">Time</div>
+                                </th>
+                                <th scope="col">
+                                    <div class="slds-truncate" title="Command">Command</div>
+                                </th>
+                                <th scope="col">
+                                    <div class="slds-truncate" title="Record ID">Record ID</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={eventHistory} for:item="event">
+                                <tr key={event.timestamp}>
+                                    <td>{event.timestamp}</td>
+                                    <td>{event.command}</td>
+                                    <td>{event.recordId}</td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </template>
+            <template if:false={eventHistory.length}>
+                <div class="slds-box slds-theme_shade slds-m-top_small">
+                    <div class="slds-text-body_regular slds-text-align_center">No event history</div>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>
