@@ -7,6 +7,7 @@ export default class AggregateMetric extends LightningElement {
     @api objectName;
     @api aggregateField;
     @api aggregateFunction = 'COUNT';
+    @api valuePrefix = '';
     
     // Private variable for filter conditions
     _filterConditions;
@@ -145,5 +146,13 @@ export default class AggregateMetric extends LightningElement {
     
     get subtitleStyle() {
         return `color: ${this.textColor}; font-size: ${this.subtitleFontSize};`;
+    }
+    
+    get displayValue() {
+        if (!this.formattedValue) {
+            return '';
+        }
+        
+        return this.valuePrefix ? this.valuePrefix + this.formattedValue : this.formattedValue;
     }
 }

@@ -1,4 +1,4 @@
-import { LightningElement, api, track, wire } from 'lwc';
+ import { LightningElement, api, track, wire } from 'lwc';
 import { loadScript } from 'lightning/platformResourceLoader';
 import getChartData from '@salesforce/apex/PieChartMetricController.getChartData';
 import CHART_JS from '@salesforce/resourceUrl/ChartJS';
@@ -10,6 +10,7 @@ export default class PieChartMetric extends LightningElement {
     @api groupByField;
     @api aggregateField;
     @api aggregateFunction = 'COUNT';
+    @api valuePrefix = '';
     
     // Private variable for filter conditions
     _filterConditions;
@@ -278,13 +279,22 @@ export default class PieChartMetric extends LightningElement {
         }
         
         // Format numeric values
+        let formattedValue = '';
         if (typeof value === 'number') {
             // If it's a whole number, don't show decimal places
             if (value % 1 === 0) {
-                return value.toLocaleString();
+                formattedValue = value.toLocaleString();
+            } else {
+                // Otherwise, format with 2 decimal places
+                formattedValue = value.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
             }
-            // Otherwise, format with 2 decimal places
-            return value.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            
+            // Add prefix if specified
+            if (this.valuePrefix) {
+                formattedValue = this.valuePrefix + formattedValue;
+            }
+            
+            return formattedValue;
         }
         
         return String(value);
