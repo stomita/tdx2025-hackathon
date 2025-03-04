@@ -1,0 +1,35 @@
+<template>
+    <div class="slds-card slds-p-around_medium">
+        <!-- Welcome message when no components are displayed -->
+        <template if:true={isDisplayEmpty}>
+            <div class="slds-box slds-theme_shade slds-p-around_medium">
+                <div class="slds-text-align_center">
+                    <lightning-icon icon-name="utility:info" size="medium" class="slds-m-bottom_small"></lightning-icon>
+                    <div class="slds-text-heading_medium slds-m-bottom_small">Welcome</div>
+                    <div class="slds-text-body_regular">
+                        Waiting for UI instructions. Components will appear here when triggered by platform events.
+                    </div>
+                </div>
+            </div>
+        </template>
+        
+        <!-- Dynamic component rendering based on displayComponents array -->
+        <template for:each={displayComponents} for:item="component">
+            <div key={component.key} class="slds-m-bottom_medium">
+                <!-- Account Detail Component -->
+                <template if:true={component.isAccountDetail}>
+                    <c-account-detail record-id={component.recordId}></c-account-detail>
+                </template>
+                
+                <!-- Sales Trend Table Component -->
+                <template if:true={component.isSalesTrendTable}>
+                    <c-sales-trend-table 
+                        title={component.title}
+                        start-date={component.startDate}
+                        end-date={component.endDate}>
+                    </c-sales-trend-table>
+                </template>
+            </div>
+        </template>
+    </div>
+</template>

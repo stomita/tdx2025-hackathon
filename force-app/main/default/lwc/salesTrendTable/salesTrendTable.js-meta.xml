@@ -12,8 +12,8 @@
     <targetConfigs>
         <targetConfig targets="lightning__AppPage,lightning__HomePage,lightning__RecordPage">
             <property name="title" type="String" default="Sales Trend" label="Title" description="Title of the component"/>
-            <property name="startDate" type="Date" label="Start Date" description="Start date for filtering opportunities"/>
-            <property name="endDate" type="Date" label="End Date" description="End date for filtering opportunities"/>
+            <property name="startDate" type="String" label="Start Date" description="Start date for filtering opportunities (YYYY-MM-DD format)"/>
+            <property name="endDate" type="String" label="End Date" description="End date for filtering opportunities (YYYY-MM-DD format)"/>
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>
