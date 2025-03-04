@@ -5,6 +5,7 @@ export default class SalesTrendTable extends LightningElement {
     @api title = 'Sales Trend';
     @api startDate;
     @api endDate;
+    @api highlightThreshold;
     
     // Private properties
     @track filterConditions = [];

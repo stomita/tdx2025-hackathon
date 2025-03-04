@@ -14,6 +14,7 @@
             <property name="title" type="String" default="Sales Trend" label="Title" description="Title of the component"/>
             <property name="startDate" type="String" label="Start Date" description="Start date for filtering opportunities (YYYY-MM-DD format)"/>
             <property name="endDate" type="String" label="End Date" description="End date for filtering opportunities (YYYY-MM-DD format)"/>
+            <property name="highlightThreshold" type="Integer" label="Highlight Threshold" description="Threshold value for highlighting cells in the table"/>
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>
