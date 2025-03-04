@@ -41,6 +41,16 @@ export default class AccountDetail extends LightningElement {
         ]);
     }
     
+    // Get account name for display
+    get accountName() {
+        if (!this.account || !this.account.data) {
+            return 'Account Details';
+        }
+        
+        const fields = this.account.data.fields;
+        return fields.Name ? fields.Name.value : 'Account Details';
+    }
+    
     // Map markers for lightning-map
     get mapMarkers() {
         if (!this.account || !this.account.data) {

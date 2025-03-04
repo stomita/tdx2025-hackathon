@@ -3,7 +3,7 @@
     <lightning-card>
         <div slot="title">
             <lightning-icon icon-name="standard:account" size="small" class="slds-m-right_small"></lightning-icon>
-            <span>Account Details</span>
+            <span>{accountName}</span>
         </div>
         
         <!-- Main Content -->
@@ -70,7 +70,7 @@
                         aggregate-field="Amount"
                         aggregate-function="SUM"
                         filter-conditions={revenueWonFilters}
-                        icon="utility:moneybag"
+                        icon="standard:opportunity"
                         icon-size="large"
                         icon-variant="inverse"
                         text-color="#2E844A"
@@ -87,7 +87,7 @@
                         aggregate-field="Amount"
                         aggregate-function="SUM"
                         filter-conditions={pipelineFilters}
-                        icon="utility:opportunity"
+                        icon="standard:opportunity"
                         icon-size="large"
                         icon-variant="inverse"
                         text-color="#0070D2"
