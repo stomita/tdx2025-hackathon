@@ -12,7 +12,7 @@ public with sharing class SetHeighlightThresholdAction {
         System.debug(highlightThresholds);
         String paramsJSON = JSON.serialize(new Map<String, Object>{ 'threshold' => highlightThresholds[0] });
         EventBus.publish(
-            new UIInstruction__e(Command__c = 'setHeighlightThreshold', Parameters__c = paramsJSON)
+            new UIInstruction__e(Command__c = 'setHighlightThreshold', Parameters__c = paramsJSON)
         );
         return new List<Boolean>{ true };
     }

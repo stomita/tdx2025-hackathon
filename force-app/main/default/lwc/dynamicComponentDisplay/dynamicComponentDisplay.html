@@ -23,10 +23,11 @@
                 
                 <!-- Sales Trend Table Component -->
                 <template if:true={component.isSalesTrendTable}>
-                    <c-sales-trend-table 
+                    <c-sales-trend-table
                         title={component.title}
                         start-date={component.startDate}
-                        end-date={component.endDate}>
+                        end-date={component.endDate}
+                        highlight-threshold={component.highlightThreshold}>
                     </c-sales-trend-table>
                 </template>
             </div>

@@ -94,6 +94,9 @@ export default class DynamicComponentDisplay extends LightningElement {
             case 'setMaxDisplayCount':
                 this.setMaxDisplayCount(parameters);
                 break;
+            case 'setHighlightThreshold':
+                this.setHighlightThreshold(parameters);
+                break;
             // Add handlers for other commands here
             default:
                 console.log('Unknown command: ' + command);
@@ -184,5 +187,53 @@ export default class DynamicComponentDisplay extends LightningElement {
         if (this.displayComponents.length > this.maxDisplayCount) {
             this.displayComponents = this.displayComponents.slice(this.displayComponents.length - this.maxDisplayCount);
         }
+    }
+
+    // Set highlight threshold for sales trend table
+    setHighlightThreshold(parameters) {
+        // Check if there are any components displayed
+        if (this.displayComponents.length === 0) {
+            console.log('No components displayed to set highlight threshold');
+            return;
+        }
+        
+        // Get the last displayed component
+        const lastComponent = this.displayComponents[this.displayComponents.length - 1];
+        
+        // Check if the last component is a sales trend table
+        if (!lastComponent.isSalesTrendTable) {
+            console.log('Last displayed component is not a sales trend table');
+            return;
+        }
+        
+        // Parse threshold value from parameters
+        let threshold = null;
+        if (parameters) {
+            try {
+                const params = JSON.parse(parameters);
+                threshold = params.threshold;
+            } catch (error) {
+                console.error('Error parsing parameters for setHighlightThreshold:', error);
+                // If parsing fails, try to use the raw value
+                threshold = parseInt(parameters);
+            }
+        }
+        
+        if (threshold === null || isNaN(threshold)) {
+            console.error('Invalid threshold value for setHighlightThreshold');
+            return;
+        }
+        
+        console.log(`Setting highlight threshold to ${threshold} for sales trend table`);
+        
+        // Update the component in the displayComponents array
+        const updatedComponents = [...this.displayComponents];
+        updatedComponents[updatedComponents.length - 1] = {
+            ...lastComponent,
+            highlightThreshold: threshold
+        };
+        
+        // Update the display components array to trigger re-render
+        this.displayComponents = updatedComponents;
     }
 }
