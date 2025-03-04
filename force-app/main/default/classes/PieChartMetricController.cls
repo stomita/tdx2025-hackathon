@@ -155,7 +155,12 @@ public with sharing class PieChartMetricController {
                     }
                     formattedValue = '(' + String.join(formattedValues, ',') + ')';
                 } else {
-                    formattedValue = '\'' + String.escapeSingleQuotes(value) + '\'';
+                    // Check if the value is a Boolean
+                    if (value.equalsIgnoreCase('true') || value.equalsIgnoreCase('false')) {
+                        formattedValue = value.toLowerCase(); // Don't quote Boolean values
+                    } else {
+                        formattedValue = '\'' + String.escapeSingleQuotes(value) + '\'';
+                    }
                 }
                 
                 filterClauses.add(fieldName + ' ' + operator + ' ' + formattedValue);
