@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Matrix Data Table</masterLabel>
+    <description>A component that displays data in a matrix format with row and column grouping</description>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__AppPage,lightning__RecordPage,lightning__HomePage">
+            <property name="title" type="String" label="Component Title" default="Matrix Data Table" />
+            <property name="objectName" type="String" label="Object API Name" required="true" description="API name of the object to query" />
+            <property name="rowField" type="String" label="Row Field" required="true" description="API name of the field to group by for rows" />
+            <property name="columnField" type="String" label="Column Field" required="true" description="API name of the field to group by for columns" />
+            <property name="aggregateField" type="String" label="Aggregate Field" required="true" description="API name of the field to aggregate" />
+            <property name="aggregateFunction" type="String" label="Aggregate Function" default="COUNT" description="Function to use for aggregation (COUNT, SUM, AVG, MIN, MAX)" />
+            <property name="rowDateGrouping" type="String" label="Row Date Grouping" description="Grouping level for row field if it's a date (DAY, MONTH, YEAR)" />
+            <property name="columnDateGrouping" type="String" label="Column Date Grouping" description="Grouping level for column field if it's a date (DAY, MONTH, YEAR)" />
+            <property name="filterConditions" type="String" label="Filter Conditions" description="JSON string of filter conditions" />
+            <property name="highlightThreshold" type="Integer" label="Highlight Threshold" description="Threshold value to highlight cells with values greater than or equal to this value" />
+        </targetConfig>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="title" type="String" label="Component Title" default="Matrix Data Table" />
+            <property name="objectName" type="String" label="Object API Name" required="true" description="API name of the object to query" />
+            <property name="rowField" type="String" label="Row Field" required="true" description="API name of the field to group by for rows" />
+            <property name="columnField" type="String" label="Column Field" required="true" description="API name of the field to group by for columns" />
+            <property name="aggregateField" type="String" label="Aggregate Field" required="true" description="API name of the field to aggregate" />
+            <property name="aggregateFunction" type="String" label="Aggregate Function" default="COUNT" description="Function to use for aggregation (COUNT, SUM, AVG, MIN, MAX)" />
+            <property name="rowDateGrouping" type="String" label="Row Date Grouping" description="Grouping level for row field if it's a date (DAY, MONTH, YEAR)" />
+            <property name="columnDateGrouping" type="String" label="Column Date Grouping" description="Grouping level for column field if it's a date (DAY, MONTH, YEAR)" />
+            <property name="filterConditions" type="String" label="Filter Conditions" description="JSON string of filter conditions" />
+            <property name="highlightThreshold" type="Integer" label="Highlight Threshold" description="Threshold value to highlight cells with values greater than or equal to this value" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

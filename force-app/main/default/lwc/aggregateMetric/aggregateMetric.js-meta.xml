@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Aggregate Metric</masterLabel>
+    <description>A component that displays an aggregate metric from any object with filtering capabilities</description>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__AppPage,lightning__HomePage,lightning__RecordPage,lightningCommunity__Default">
+            <property name="title" type="String" label="Title" description="The title displayed below the metric" default="Metric" />
+            <property name="objectName" type="String" label="Object Name" description="API name of the object to query" required="true" />
+            <property name="aggregateField" type="String" label="Aggregate Field" description="API name of the field to aggregate" required="true" />
+            <property name="aggregateFunction" type="String" label="Aggregate Function" description="Function to use for aggregation" default="COUNT" datasource="COUNT,SUM,AVG,MIN,MAX" required="true" />
+            <property name="filterConditions" type="String" label="Filter Conditions (JSON)" description="JSON string of filter conditions" />
+            <property name="icon" type="String" label="Icon" description="SLDS icon name" default="utility:metrics" />
+            <property name="iconSize" type="String" label="Icon Size" description="Size of the icon" default="large" datasource="xx-small,x-small,small,medium,large" />
+            <property name="iconVariant" type="String" label="Icon Variant" description="Variant of the icon" default="inverse" datasource="default,inverse,warning,error,success" />
+            <property name="textColor" type="String" label="Text Color" description="Color of the text" default="#000000" />
+            <property name="backgroundColor" type="String" label="Background Color" description="Background color of the metric card" default="#FFFFFF" />
+            <property name="borderColor" type="String" label="Border Color" description="Border color of the metric card" />
+            <property name="borderRadius" type="String" label="Border Radius" description="Border radius of the metric card" default="8px" />
+            <property name="fontSize" type="String" label="Font Size" description="Font size of the metric value" default="3rem" />
+            <property name="subtitleFontSize" type="String" label="Subtitle Font Size" description="Font size of the subtitle" default="1rem" />
+            <property name="height" type="String" label="Height" description="Height of the metric card" default="200px" />
+            <property name="width" type="String" label="Width" description="Width of the metric card" default="100%" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

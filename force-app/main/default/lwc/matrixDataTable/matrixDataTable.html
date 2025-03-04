@@ -1,0 +1,82 @@
+<template>
+    <div class="slds-card">
+        <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__figure">
+                    <lightning-icon icon-name="standard:report" size="small"></lightning-icon>
+                </div>
+                <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                        <span class="slds-text-heading_small">{title}</span>
+                    </h2>
+                </div>
+            </header>
+        </div>
+        
+        <div class="slds-card__body slds-card__body_inner">
+            <!-- Loading spinner -->
+            <template if:true={isLoading}>
+                <div class="slds-is-relative slds-p-around_medium">
+                    <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+                </div>
+            </template>
+            
+            <!-- Error message -->
+            <template if:true={error}>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert">
+                    <span class="slds-assistive-text">Error</span>
+                    <h2>{error}</h2>
+                </div>
+            </template>
+            
+            <!-- Matrix Table -->
+            <template if:true={hasMatrixData}>
+                <div class="matrix-table-container">
+                    <table class="slds-table slds-table_bordered slds-table_fixed-layout slds-table_cell-buffer matrix-table">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <template for:each={matrixHeaders} for:item="header">
+                                    <th key={header} scope="col" class={getHeaderClass}>
+                                        <div class="slds-truncate" title={header}>{header}</div>
+                                    </th>
+                                </template>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={matrixRows} for:item="row" for:index="rowIndex">
+                                <tr key={row.id}>
+                                    <template for:each={row.cells} for:item="cell" for:index="cellIndex">
+                                        <template if:true={cell.isHeader}>
+                                            <th key={cell.id} scope="row" data-label={cell.label} class="slds-cell-wrap">
+                                                <div class="slds-truncate" title={cell.value}>{cell.value}</div>
+                                            </th>
+                                        </template>
+                                        <template if:false={cell.isHeader}>
+                                            <td key={cell.id} data-label={cell.label}
+                                                class={cell.cellClass}
+                                                data-row-index={rowIndex} data-cell-index={cellIndex}
+                                                data-row-value={cell.rowValue} data-column-value={cell.columnValue}
+                                                onclick={handleCellClick}>
+                                                <div class="slds-truncate" title={cell.value}>{cell.formattedValue}</div>
+                                            </td>
+                                        </template>
+                                    </template>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </template>
+            
+            <!-- No data message -->
+            <template if:true={showNoDataMessage}>
+                <div class="slds-illustration slds-illustration_small" aria-hidden="true">
+                    <div class="slds-text-longform slds-text-align_center">
+                        <h3 class="slds-text-heading_medium">No data available</h3>
+                        <p class="slds-text-body_regular">Please adjust your criteria and try again.</p>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

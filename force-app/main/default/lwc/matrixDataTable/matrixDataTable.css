@@ -1,0 +1,67 @@
+.matrix-table-container {
+    overflow-x: auto;
+}
+
+.matrix-table {
+    min-width: 100%;
+    table-layout: auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #d8dde6;
+}
+
+.matrix-table th, .matrix-table td {
+    text-align: center;
+    border: 1px solid #d8dde6;
+    padding: 0.5rem;
+    white-space: nowrap;
+}
+
+.matrix-table th:first-child, .matrix-table td:first-child {
+    text-align: left;
+    font-weight: bold;
+}
+
+.matrix-table th {
+    background-color: #f3f2f2;
+    color: #514f4d;
+    font-weight: 700;
+    line-height: 1.25;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.matrix-table td.data-cell {
+    cursor: pointer;
+}
+
+/* Remove hover effect on rows */
+.matrix-table tr:hover {
+    background-color: transparent;
+}
+
+.matrix-table td.selected-cell {
+    background-color: #e3f3ff;
+}
+
+/* Style for highlighted cells */
+.matrix-table td.highlighted-cell {
+    background-color: #ffeb99; /* Yellow background */
+    font-weight: bold;
+}
+
+/* Style for selected cells that are also highlighted */
+.matrix-table td.selected-cell.highlighted-cell {
+    background-color: #ffd699; /* Orange-ish background for both selected and highlighted */
+    font-weight: bold;
+}
+
+/* Add SLDS styling */
+.slds-table {
+    background-color: #fff;
+    font-size: 0.8125rem;
+}
+
+.slds-table td, .slds-table th {
+    padding: 0.5rem 0.5rem;
+}

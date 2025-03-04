@@ -1,0 +1,39 @@
+<template>
+    <div class="slds-card metric-container" style={containerStyle}>
+        <!-- Loading spinner -->
+        <template if:true={isLoading}>
+            <div class="slds-is-relative slds-p-around_medium">
+                <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+            </div>
+        </template>
+        
+        <!-- Error message -->
+        <template if:true={error}>
+            <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert">
+                <span class="slds-assistive-text">Error</span>
+                <h2>{error}</h2>
+            </div>
+        </template>
+        
+        <!-- Metric Display -->
+        <template if:true={hasMetricData}>
+            <div class="slds-grid slds-grid_vertical slds-align_absolute-center slds-p-around_medium metric-content">
+                <div class="slds-col slds-size_1-of-1 slds-text-align_center">
+                    <lightning-icon icon-name={icon} size={iconSize} variant={iconVariant} class="slds-m-bottom_small"></lightning-icon>
+                    <div class="metric-value" style={valueStyle}>{formattedValue}</div>
+                    <div class="metric-title" style={subtitleStyle}>{title}</div>
+                </div>
+            </div>
+        </template>
+        
+        <!-- No data message -->
+        <template if:true={showNoDataMessage}>
+            <div class="slds-illustration slds-illustration_small" aria-hidden="true">
+                <div class="slds-text-longform slds-text-align_center">
+                    <h3 class="slds-text-heading_medium">No data available</h3>
+                    <p class="slds-text-body_regular">Please adjust your criteria and try again.</p>
+                </div>
+            </div>
+        </template>
+    </div>
+</template>
