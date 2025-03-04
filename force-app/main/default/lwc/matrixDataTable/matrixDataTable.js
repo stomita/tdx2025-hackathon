@@ -227,13 +227,15 @@ export default class MatrixDataTable extends LightningElement {
             // Remove selected class from previously selected cell
             const prevRow = this.matrixRows[this.selectedCell.rowIndex];
             if (prevRow && prevRow.cells[this.selectedCell.cellIndex]) {
-                prevRow.cells[this.selectedCell.cellIndex].cellClass = 'slds-cell-wrap data-cell';
+                const prevClass = prevRow.cells[this.selectedCell.cellIndex].cellClass;
+                prevRow.cells[this.selectedCell.cellIndex].cellClass = prevClass.replace('selected-cell', '');
             }
         }
         
         // Set new selected cell
         this.selectedCell = { rowIndex, cellIndex };
-        this.matrixRows[rowIndex].cells[cellIndex].cellClass = 'slds-cell-wrap data-cell selected-cell';
+        const prevClass = this.matrixRows[rowIndex].cells[rowIndex].cellClass;
+        this.matrixRows[rowIndex].cells[cellIndex].cellClass = prevClass.replace('selected-cell', '') + ' selected-cell';
         
         // Dispatch cell click event
         const cellClickEvent = new CustomEvent('cellclick', {

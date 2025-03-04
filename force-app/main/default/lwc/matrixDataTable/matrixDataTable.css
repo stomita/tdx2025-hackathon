@@ -42,6 +42,7 @@
 
 .matrix-table td.selected-cell {
     background-color: #e3f3ff;
+    font-weight: bold;
 }
 
 /* Style for highlighted cells */
