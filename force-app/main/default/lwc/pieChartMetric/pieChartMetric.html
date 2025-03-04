@@ -1,0 +1,49 @@
+<template>
+    <div class="slds-card pie-chart-container" style={containerStyle}>
+        <!-- Loading spinner -->
+        <template if:true={isLoading}>
+            <div class="slds-is-relative slds-p-around_medium">
+                <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+            </div>
+        </template>
+        
+        <!-- Error message -->
+        <template if:true={error}>
+            <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert">
+                <span class="slds-assistive-text">Error</span>
+                <h2>{error}</h2>
+            </div>
+        </template>
+        
+        <!-- Chart Display -->
+        <template if:true={hasChartData}>
+            <div class="slds-card__header slds-grid">
+                <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                    <div class="slds-media__body">
+                        <h2 class="slds-card__header-title">
+                            <span class="slds-text-heading_small">{title}</span>
+                        </h2>
+                    </div>
+                    <div class="slds-no-flex">
+                        <div class="slds-text-title slds-m-right_small">
+                            Total: <span class="slds-text-heading_small">{formattedTotal}</span>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div class="slds-card__body slds-card__body_inner chart-body">
+                <canvas class="pie-chart"></canvas>
+            </div>
+        </template>
+        
+        <!-- No data message -->
+        <template if:true={showNoDataMessage}>
+            <div class="slds-illustration slds-illustration_small" aria-hidden="true">
+                <div class="slds-text-longform slds-text-align_center">
+                    <h3 class="slds-text-heading_medium">No data available</h3>
+                    <p class="slds-text-body_regular">Please adjust your criteria and try again.</p>
+                </div>
+            </div>
+        </template>
+    </div>
+</template>

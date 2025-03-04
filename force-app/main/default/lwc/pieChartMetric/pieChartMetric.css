@@ -1,0 +1,26 @@
+.pie-chart-container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.pie-chart-container:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.chart-body {
+    position: relative;
+    flex: 1;
+    min-height: 300px;
+    padding: 1rem;
+}
+
+canvas.pie-chart {
+    width: 100%;
+    height: 100%;
+}

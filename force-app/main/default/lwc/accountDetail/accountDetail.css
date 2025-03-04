@@ -1,0 +1,19 @@
+/* Adjust map height */
+lightning-map {
+    height: 300px;
+}
+
+/* Add some spacing */
+.slds-box {
+    padding: 1rem;
+}
+
+/* Ensure proper spacing between columns */
+.slds-p-right_medium {
+    padding-right: 1rem;
+}
+
+/* Ensure proper spacing between rows */
+.slds-m-bottom_medium {
+    margin-bottom: 1rem;
+}

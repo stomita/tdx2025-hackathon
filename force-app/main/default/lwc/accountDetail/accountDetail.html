@@ -1,0 +1,101 @@
+<template>
+    <!-- Page Header -->
+    <lightning-card>
+        <div slot="title">
+            <lightning-icon icon-name="standard:account" size="small" class="slds-m-right_small"></lightning-icon>
+            <span>Account Details</span>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="slds-grid slds-wrap">
+            <!-- Left Column (2/3 width) -->
+            <div class="slds-col slds-size_2-of-3 slds-p-right_medium">
+                <!-- Account Details -->
+                <div class="slds-box slds-m-bottom_medium">
+                    <lightning-record-view-form
+                        record-id={recordId}
+                        object-api-name="Account">
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-output-field field-name="Name"></lightning-output-field>
+                                <lightning-output-field field-name="Phone"></lightning-output-field>
+                                <lightning-output-field field-name="Website"></lightning-output-field>
+                                <lightning-output-field field-name="Industry"></lightning-output-field>
+                                <lightning-output-field field-name="Type"></lightning-output-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-output-field field-name="AnnualRevenue"></lightning-output-field>
+                                <lightning-output-field field-name="NumberOfEmployees"></lightning-output-field>
+                                <lightning-output-field field-name="Rating"></lightning-output-field>
+                                <lightning-output-field field-name="AccountNumber"></lightning-output-field>
+                                <lightning-output-field field-name="OwnerId"></lightning-output-field>
+                            </div>
+                        </div>
+                    </lightning-record-view-form>
+                </div>
+                
+                <!-- Map -->
+                <div class="slds-box">
+                    <lightning-map
+                        map-markers={mapMarkers}
+                        zoom-level="15"
+                        list-view="hidden">
+                    </lightning-map>
+                </div>
+            </div>
+            
+            <!-- Right Column (1/3 width) -->
+            <div class="slds-col slds-size_1-of-3">
+                <!-- Opportunity Type Pie Chart -->
+                <div class="slds-m-bottom_medium">
+                    <c-pie-chart-metric
+                        title="Opportunity by Type"
+                        object-name="Opportunity"
+                        group-by-field="Type"
+                        aggregate-field="Amount"
+                        aggregate-function="SUM"
+                        filter-conditions={opportunityTypeChartFilters}
+                        max-slices="5"
+                        show-legend="true"
+                        height="300px"
+                        color-palette="default">
+                    </c-pie-chart-metric>
+                </div>
+                
+                <!-- Revenue Won Metric -->
+                <div class="slds-m-bottom_medium">
+                    <c-aggregate-metric
+                        title="Revenue Won"
+                        object-name="Opportunity"
+                        aggregate-field="Amount"
+                        aggregate-function="SUM"
+                        filter-conditions={revenueWonFilters}
+                        icon="utility:moneybag"
+                        icon-size="large"
+                        icon-variant="inverse"
+                        text-color="#2E844A"
+                        background-color="#FFFFFF"
+                        height="150px">
+                    </c-aggregate-metric>
+                </div>
+                
+                <!-- Pipeline Metric -->
+                <div>
+                    <c-aggregate-metric
+                        title="Pipeline"
+                        object-name="Opportunity"
+                        aggregate-field="Amount"
+                        aggregate-function="SUM"
+                        filter-conditions={pipelineFilters}
+                        icon="utility:opportunity"
+                        icon-size="large"
+                        icon-variant="inverse"
+                        text-color="#0070D2"
+                        background-color="#FFFFFF"
+                        height="150px">
+                    </c-aggregate-metric>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Pie Chart Metric</masterLabel>
+    <description>A component that displays aggregate data as a pie chart with filtering capabilities</description>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__AppPage,lightning__HomePage,lightning__RecordPage,lightningCommunity__Default">
+            <property name="title" type="String" label="Title" description="The title displayed above the chart" default="Pie Chart Metric" />
+            <property name="objectName" type="String" label="Object Name" description="API name of the object to query" required="true" />
+            <property name="groupByField" type="String" label="Group By Field" description="API name of the field to group by" required="true" />
+            <property name="aggregateField" type="String" label="Aggregate Field" description="API name of the field to aggregate" required="true" />
+            <property name="aggregateFunction" type="String" label="Aggregate Function" description="Function to use for aggregation" default="COUNT" datasource="COUNT,SUM,AVG,MIN,MAX" required="true" />
+            <property name="filterConditions" type="String" label="Filter Conditions (JSON)" description="JSON string of filter conditions" />
+            <property name="maxSlices" type="Integer" label="Maximum Slices" description="Maximum number of slices to show (remaining will be grouped as 'Other')" default="5" min="2" max="20" />
+            <property name="showLegend" type="Boolean" label="Show Legend" description="Whether to show the chart legend" default="false" />
+            <property name="colorPalette" type="String" label="Color Palette" description="Color palette to use for the chart" default="default" datasource="default,pastel,bright,dark" />
+            <property name="height" type="String" label="Height" description="Height of the chart container" default="400px" />
+            <property name="width" type="String" label="Width" description="Width of the chart container" default="100%" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
