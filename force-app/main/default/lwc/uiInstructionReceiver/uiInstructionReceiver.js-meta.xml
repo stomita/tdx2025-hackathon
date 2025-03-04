@@ -25,6 +25,22 @@
                     ]]>
                 </schema>
             </event>
+            <event name="changehighlightthreshold" label="Highlight Threshold Change" description="Event fired when the highlight threshold value changes">
+                <schema>
+                    <![CDATA[
+                    {
+                        "type": "object",
+                        "properties": {
+                            "highlightThreshold": {
+                                "type": "integer",
+                                "title": "Highlight Threshold",
+                                "description": "The threshold value for highlighting elements"
+                            }
+                        }
+                    }
+                    ]]>
+                </schema>
+            </event>
         </targetConfig>
     </targetConfigs>
     <description>Receives UI instructions from platform events and performs actions</description>

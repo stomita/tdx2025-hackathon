@@ -103,6 +103,9 @@ export default class UiInstructionReceiver extends LightningElement {
             case 'showAccountInfo':
                 this.handleShowAccountInfo(recordId);
                 break;
+            case 'setHeighlightThreshold':
+                this.handleSetHeighlightThreshold(parameters);
+                break;
             // Add handlers for other commands here
             default:
                 console.log('Unknown command: ' + command);
@@ -123,6 +126,37 @@ export default class UiInstructionReceiver extends LightningElement {
         // Dispatch the event
         this.dispatchEvent(showAccountEvent);
         console.log('Dispatched showaccountinfo event with recordId: ' + recordId);
+    }
+    
+    // Handle setHeighlightThreshold command
+    handleSetHeighlightThreshold(parameters) {
+        console.log('Setting highlight threshold with parameters: ' + parameters);
+        
+        // Parse parameters (assuming it's a JSON string)
+        let highlightThreshold = 0;
+        try {
+            if (parameters) {
+                const params = JSON.parse(parameters);
+                highlightThreshold = params.threshold || 0;
+            }
+        } catch (error) {
+            console.error('Error parsing parameters: ', error);
+            // If parsing fails, try to use the raw value
+            highlightThreshold = parseFloat(parameters) || 0;
+        }
+        
+        console.log('Highlight threshold value: ' + highlightThreshold);
+        
+        // Dispatch custom event for Dynamic Interactions
+        const highlightEvent = new CustomEvent('changehighlightthreshold', {
+            detail: {
+                highlightThreshold: highlightThreshold
+            }
+        });
+        
+        // Dispatch the event
+        this.dispatchEvent(highlightEvent);
+        console.log('Dispatched changehighlightthreshold event with threshold: ' + highlightThreshold);
     }
     
     // Clear event history
