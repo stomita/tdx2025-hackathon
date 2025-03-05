@@ -49,11 +49,15 @@ public with sharing class GetLatestUserActionLogsAction {
             // Get current user ID
             Id currentUserId = UserInfo.getUserId();
             
-            // Build the query to get only current user's logs
+            // Calculate timestamp for 3 minutes ago
+            Datetime threeMinutesAgo = Datetime.now().addMinutes(-3);
+            
+            // Build the query to get only current user's logs from the last 3 minutes
             String query = 'SELECT Id, ActionDetails__c, ActionTimestamp__c, User__c, User__r.Name ' +
-                          'FROM UserActionLog__c ' +
-                          'WHERE User__c = :currentUserId ' +
-                          'ORDER BY ActionTimestamp__c DESC LIMIT :limitCount';
+                           'FROM UserActionLog__c ' +
+                           'WHERE User__c = :currentUserId ' +
+                           'AND ActionTimestamp__c >= :threeMinutesAgo ' +
+                           'ORDER BY ActionTimestamp__c DESC LIMIT :limitCount';
             
             // Execute the query
             List<UserActionLog__c> logs = Database.query(query);
