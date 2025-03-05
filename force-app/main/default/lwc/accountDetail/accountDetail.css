@@ -9,11 +9,27 @@ lightning-map {
 }
 
 /* Ensure proper spacing between columns */
-.slds-p-right_medium {
-    padding-right: 1rem;
+.slds-p-right_small {
+    padding-right: 0.75rem;
+}
+
+.slds-p-horizontal_small {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.slds-p-left_small {
+    padding-left: 0.75rem;
 }
 
 /* Ensure proper spacing between rows */
 .slds-m-bottom_medium {
     margin-bottom: 1rem;
+}
+
+/* Ensure consistent height for all columns */
+c-account-activity-timeline {
+    display: block;
+    height: 100%;
+    min-height: 600px;
 }

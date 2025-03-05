@@ -8,24 +8,22 @@
             <span>{accountName}</span>
         </div>
         
-        <!-- Main Content -->
+        <!-- Main Content - 3 Column Layout -->
         <div class="slds-grid slds-wrap">
-            <!-- Left Column (2/3 width) -->
-            <div class="slds-col slds-size_2-of-3 slds-p-right_medium">
+            <!-- Left Column (1/3 width) - Account Details and Map -->
+            <div class="slds-col slds-size_1-of-3 slds-p-right_small">
                 <!-- Account Details -->
                 <div class="slds-box slds-m-bottom_medium">
                     <lightning-record-view-form
                         record-id={recordId}
                         object-api-name="Account">
                         <div class="slds-grid slds-wrap">
-                            <div class="slds-col slds-size_1-of-2">
+                            <div class="slds-col slds-size_1-of-1">
                                 <lightning-output-field field-name="Name"></lightning-output-field>
                                 <lightning-output-field field-name="Phone"></lightning-output-field>
                                 <lightning-output-field field-name="Website"></lightning-output-field>
                                 <lightning-output-field field-name="Industry"></lightning-output-field>
                                 <lightning-output-field field-name="Type"></lightning-output-field>
-                            </div>
-                            <div class="slds-col slds-size_1-of-2">
                                 <lightning-output-field field-name="AnnualRevenue"></lightning-output-field>
                                 <lightning-output-field field-name="NumberOfEmployees"></lightning-output-field>
                                 <lightning-output-field field-name="Rating"></lightning-output-field>
@@ -46,8 +44,8 @@
                 </div>
             </div>
             
-            <!-- Right Column (1/3 width) -->
-            <div class="slds-col slds-size_1-of-3">
+            <!-- Middle Column (1/3 width) - Pie Chart and Metrics -->
+            <div class="slds-col slds-size_1-of-3 slds-p-horizontal_small">
                 <!-- Opportunity Type Pie Chart -->
                 <div class="slds-m-bottom_medium">
                     <c-pie-chart-metric
@@ -100,6 +98,13 @@
                         value-prefix="$">
                     </c-aggregate-metric>
                 </div>
+            </div>
+            
+            <!-- Right Column (1/3 width) - Account Activity Timeline -->
+            <div class="slds-col slds-size_1-of-3 slds-p-left_small">
+                <c-account-activity-timeline
+                    record-id={recordId}>
+                </c-account-activity-timeline>
             </div>
         </div>
     </lightning-card>
