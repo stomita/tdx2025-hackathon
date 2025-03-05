@@ -68,9 +68,6 @@ public with sharing class GetLatestUserActionLogsAction {
                 logsText += timestamp + ': ' + log.ActionDetails__c;
             }
             
-            // Log the action of retrieving logs
-            insertUserActionLog('Retrieved user action logs', logs.size() + ' logs retrieved for current user');
-            
             response.formattedLogs = logsText;
             response.message = 'Successfully retrieved ' + logs.size() + ' user action logs for current user';
         } catch (Exception e) {
@@ -81,18 +78,5 @@ public with sharing class GetLatestUserActionLogsAction {
         }
         
         return new List<ActionLogResponse>{ response };
-    }
-    
-    // Helper method to log this action itself
-    private static void insertUserActionLog(String action, String details) {
-        try {
-            UserActionLog__c log = new UserActionLog__c(
-                ActionDetails__c = action + ': ' + details,
-                User__c = UserInfo.getUserId()
-            );
-            insert log;
-        } catch (Exception e) {
-            System.debug('Error logging user action: ' + e.getMessage());
-        }
     }
 }
