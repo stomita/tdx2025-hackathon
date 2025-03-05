@@ -16,4 +16,37 @@
         <visibility>Visible</visibility>
     </tabSettings>
     
+    <!-- Object Permissions -->
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>UserActionLog__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    
+    <!-- Field Permissions -->
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>UserActionLog__c.ActionDetails__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>UserActionLog__c.ActionTimestamp__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>UserActionLog__c.User__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>UserActionLog__c.RelatedRecordId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    
 </PermissionSet>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ActionTimestamp__c</fullName>
+    <defaultValue>NOW()</defaultValue>
+    <description>Date and time when the user action was performed</description>
+    <externalId>false</externalId>
+    <label>Action Timestamp</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>
