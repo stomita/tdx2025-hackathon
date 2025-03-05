@@ -1,17 +1,20 @@
 <template>
     <div class="slds-card">
-        <div class="slds-card__header slds-grid">
-            <header class="slds-media slds-media_center slds-has-flexi-truncate">
-                <div class="slds-media__figure">
-                    <lightning-icon icon-name="standard:report" size="small"></lightning-icon>
+            <!-- Card header - only shown if title is provided -->
+            <template if:true={hasTitle}>
+                <div class="slds-card__header slds-grid">
+                    <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                        <div class="slds-media__figure">
+                            <lightning-icon icon-name="standard:report" size="small"></lightning-icon>
+                        </div>
+                        <div class="slds-media__body">
+                            <h2 class="slds-card__header-title">
+                                <span class="slds-text-heading_small">{title}</span>
+                            </h2>
+                        </div>
+                    </header>
                 </div>
-                <div class="slds-media__body">
-                    <h2 class="slds-card__header-title">
-                        <span class="slds-text-heading_small">{title}</span>
-                    </h2>
-                </div>
-            </header>
-        </div>
+            </template>
         
         <div class="slds-card__body slds-card__body_inner">
             <!-- Loading spinner -->

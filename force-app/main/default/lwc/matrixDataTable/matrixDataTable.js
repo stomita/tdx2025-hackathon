@@ -3,7 +3,7 @@ import getMatrixData from '@salesforce/apex/MatrixDataTableController.getMatrixD
 
 export default class MatrixDataTable extends LightningElement {
     // Public properties that can be set by parent components
-    @api title = 'Matrix Data Table';
+    @api title;
     @api objectName;
     @api rowField;
     @api columnField;
@@ -313,5 +313,9 @@ export default class MatrixDataTable extends LightningElement {
     
     get getHeaderClass() {
         return 'slds-text-title_caps';
+    }
+    
+    get hasTitle() {
+        return this.title && this.title.trim() !== '';
     }
 }
